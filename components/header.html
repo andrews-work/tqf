@@ -2,27 +2,19 @@
     <nav class='flex items-center justify-between w-full h-15'>
 
         <!-- Logo -->
-        <div class='flex items-center justify-center w-1/6 h-10 p-2'> 
+        <div class='flex items-center justify-start w-1/6 h-10 p-2'> 
             <img src='images/square-logo.png' alt='Logo' class='h-full' />
         </div>
 
         <!-- Menu Items for Desktop -->
-        <div class='items-center justify-center hidden w-4/6 lg:flex'>
-            <div class='flex items-center justify-center w-10 h-10 p-5'>
-                <a href='index.html' class='border-b border-gray-800'>Home</a>
-            </div>
-            <div class='flex items-center justify-center w-10 h-10 p-5'>
-                <a href='about.html' class='border-b border-gray-800'>About</a>
-            </div>
-            <div class='flex items-center justify-center w-10 h-10 p-5'>
-                <a href='contact.html' class='border-b border-gray-800'>Contact</a>
-            </div>
-            <div class='flex items-center justify-center w-10 h-10 p-5'>
-                <a href='services.html' class='border-b border-gray-800'>Services</a>
-            </div>
+        <div class='flex items-center justify-end hidden w-4/6 lg:flex space-x-5'> <!-- Added space-x-5 -->
+            <a href='index.html' class='border-b border-gray-800'>Home</a>
+            <a href='about.html' class='border-b border-gray-800'>About</a>
+            <a href='contact.html' class='border-b border-gray-800'>Contact</a>
+            <a href='services.html' class='border-b border-gray-800'>Services</a>
         </div>
 
-        <!-- mobile icons -->
+        <!-- Mobile Icons -->
         <div class='flex items-center justify-center w-1/6 h-10 p-2 lg:hidden'> 
             <button id='hamburger' class='focus:outline-none'>
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -45,21 +37,3 @@
         <a href='/services' class='w-full p-3 text-center border-b border-gray-800'>Services</a>
     </div>
 </header>
-
-<!-- <script>
-    const hamburger = document.getElementById('hamburger');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const closeMenu = document.getElementById('close-menu');
-
-    hamburger.addEventListener('click', function() {
-        mobileMenu.classList.remove('hidden');
-        hamburger.classList.add('hidden');
-        closeMenu.classList.remove('hidden');
-    });
-
-    closeMenu.addEventListener('click', function() {
-        mobileMenu.classList.add('hidden');
-        closeMenu.classList.add('hidden');
-        hamburger.classList.remove('hidden');
-    });
-</script> -->
