@@ -3,15 +3,15 @@
 
         <!-- Logo -->
         <div class='flex items-center w-2/6'>
-            <img src='images/square-logo.png' alt='Logo' class='max-h-12 w-auto' /> <!-- Set a max height -->
+            <img src='images/square-logo.png' alt='Logo' class='max-h-12 w-auto' />
         </div>
 
         <!-- Menu Items for Desktop -->
         <div class='items-center justify-center hidden w-2/6 space-x-5 lg:flex'>
-            <a href='index.html' class='border-b border-gray-800'>Home</a>
-            <a href='about.html' class='border-b border-gray-800 mr-5'>About</a>
-            <a href='contact.html' class='border-b border-gray-800 mr-5'>Contact</a>
-            <a href='services.html' class='border-b border-gray-800'>Services</a>
+            <a href='index.html' class='border-b border-gray-800 hover:border-b-0'>Home</a>
+            <a href='about.html' class='border-b border-gray-800 mr-5 hover:border-b-0'>About</a>
+            <a href='contact.html' class='border-b border-gray-800 mr-5 hover:border-b-0'>Contact</a>
+            <a href='services.html' class='border-b border-gray-800 hover:border-b-0'>Services</a>
         </div>
 
         <!-- Mobile Icons -->
@@ -37,3 +37,10 @@
         <a href='/services' class='w-full p-3 text-center border-b border-gray-800'>Services</a>
     </div>
 </header>
+
+<style>
+    /* Hover effect for desktop menu items */
+    .lg\:flex a:hover {
+        border-bottom: none;
+    }
+</style>
