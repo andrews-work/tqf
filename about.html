@@ -10,8 +10,38 @@
 <body>
     <div id="header"></div>
     <main class="p-4">
-        <h1 class="text-2xl">About Us</h1>
-        <p>Information about the services we offer.</p>
+        <div class="container mx-auto p-6">
+
+            <!-- Section 1: Who We Are -->
+            <section class="text-center mb-10">
+                <h2 class="text-3xl font-bold">Who We Are</h2>
+            </section>
+    
+            <!-- Section 2: Image Left, Text Right -->
+            <section class="flex flex-col md:flex-row mb-10">
+                <div class="md:w-1/2 mb-6 md:mb-0">
+                    <img src="path/to/image1.jpg" alt="Image 1" class="w-full h-auto rounded-lg shadow-lg">
+                </div>
+                <div class="md:w-1/2 flex items-center">
+                    <p class="text-lg">
+                        We are a passionate team dedicated to providing exceptional service. Our mission is to deliver quality and excellence in everything we do.
+                    </p>
+                </div>
+            </section>
+    
+            <!-- Section 3: Text Left, Image Right -->
+            <section class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 flex items-center mb-6 md:mb-0">
+                    <p class="text-lg">
+                        Our values are rooted in integrity, teamwork, and customer satisfaction. We believe in building lasting relationships with our clients.
+                    </p>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="path/to/image2.jpg" alt="Image 2" class="w-full h-auto rounded-lg shadow-lg">
+                </div>
+            </section>
+    
+        </div>
     </main>
     <div id="footer"></div>
     <script src="js/script.js"></script>
