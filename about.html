@@ -19,10 +19,10 @@
                 </div>
             </section>
 
-            <!-- Section 2: paragraph in three columns -->
+            <!-- Section 2: paragraph in one column on small screens -->
             <section class="mb-10">
-                <div class="grid grid-cols-3">
-                    <div class="col-span-1"></div> <!-- Empty left column -->
+                <div class="grid grid-cols-1 md:grid-cols-3">
+                    <div class="col-span-1"></div> <!-- Empty left column on larger screens -->
                     <div class="col-span-1">
                         <p class="text-center">TheQuantumFox is an ERP Management Consulting firm specialised in Cloud
                         solutions (SaaS, PaaS and IaaS) and digital transformation based in Australia. 
@@ -30,7 +30,7 @@
                         across government, health, financial services, councils, manufacturing &
                         education industries.</p>
                     </div>
-                    <div class="col-span-1"></div> <!-- Empty right column -->
+                    <div class="col-span-1"></div> <!-- Empty right column on larger screens -->
                 </div>
             </section>
     
@@ -55,6 +55,33 @@
                 </div>
                 <div>
                     <img src="path/to/image2.jpg" alt="Image 2" class="w-full h-auto rounded-lg shadow-lg">
+                </div>
+            </section>
+
+            <!-- Section 5: Icons -->
+            <section class="text-center mb-10">
+                <h3 class="text-4xl font-bold mb-6">Our Expertise</h3>
+                <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+                    <div class="flex flex-col items-center">
+                        <img src="path/to/government-icon.png" alt="Government" class="w-16 h-16 mb-2">
+                        <span>Government</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <img src="path/to/health-icon.png" alt="Health" class="w-16 h-16 mb-2">
+                        <span>Health</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <img src="path/to/financial-icon.png" alt="Financial" class="w-16 h-16 mb-2">
+                        <span>Financial</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <img src="path/to/manufacturing-icon.png" alt="Manufacturing" class="w-16 h-16 mb-2">
+                        <span>Manufacturing</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <img src="path/to/education-icon.png" alt="Education" class="w-16 h-16 mb-2">
+                        <span>Education</span>
+                    </div>
                 </div>
             </section>
 
