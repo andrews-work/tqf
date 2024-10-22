@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
         .then(response => response.text())
         .then(data => {
             document.getElementById('header').innerHTML = data;
+            setupMobileMenu();  // Call function to set up mobile menu after header is loaded
         });
 
     // Load footer
@@ -15,3 +16,24 @@ document.addEventListener("DOMContentLoaded", function() {
 
     console.log("Page loaded:", document.title);
 });
+
+// Function to set up mobile menu
+function setupMobileMenu() {
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const closeMenu = document.getElementById('close-menu');
+
+    if (hamburger && mobileMenu && closeMenu) {
+        hamburger.addEventListener('click', function() {
+            mobileMenu.classList.remove('hidden');
+            hamburger.classList.add('hidden');
+            closeMenu.classList.remove('hidden');
+        });
+
+        closeMenu.addEventListener('click', function() {
+            mobileMenu.classList.add('hidden');
+            closeMenu.classList.add('hidden');
+            hamburger.classList.remove('hidden');
+        });
+    }
+}
