@@ -11,16 +11,111 @@
 
     <div id="header"></div>
 
-    <main class="">
-        <div class="h-full">
-            <img src="images/blockchain.jpg" class="" alt="">
+    <main class="w-5/6 mx-auto py-4">
+        <div class="h-full mb-4">
+            <img src="images/blockchain.jpg" class="w-full rounded" alt="Blockchain">
         </div>
-        <div class=""></div>
 
+        <div class="mb-4">
+            <div class="flex space-x-4 mb-4">
+                <button class="tab-title px-4 py-2 rounded bg-gray-700 text-white" data-tab="tab1">Option 1</button>
+                <button class="tab-title px-4 py-2 rounded bg-gray-700 text-white" data-tab="tab2">Option 2</button>
+                <button class="tab-title px-4 py-2 rounded bg-gray-700 text-white" data-tab="tab3">Option 3</button>
+            </div>
+
+            <div class="mb-4 text-center">
+                <h2 id="tab-title" class="text-2xl font-bold">Option 1</h2>
+            </div>
+
+            <div id="tab1" class="tab-content active">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="bg-gray-700 p-4 rounded-lg">
+                        <h3 class="text-lg font-bold">Large Card</h3>
+                        <img src="https://via.placeholder.com/300" alt="Placeholder" class="mb-2 rounded">
+                        <p>This is a large card with some information about Option 1.</p>
+                    </div>
+                    <div class="grid grid-cols-1 gap-4">
+                        <div class="bg-gray-600 p-4 rounded-lg">
+                            <h3 class="text-lg font-bold">Small Card 1</h3>
+                            <img src="https://via.placeholder.com/150" alt="Placeholder" class="mb-2 rounded">
+                            <p>This is a small card with info about item 1.</p>
+                        </div>
+                        <div class="bg-gray-600 p-4 rounded-lg">
+                            <h3 class="text-lg font-bold">Small Card 2</h3>
+                            <img src="https://via.placeholder.com/150" alt="Placeholder" class="mb-2 rounded">
+                            <p>This is a small card with info about item 2.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tab2" class="tab-content">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="bg-gray-700 p-4 rounded-lg">
+                        <h3 class="text-lg font-bold">Large Card</h3>
+                        <img src="https://via.placeholder.com/300" alt="Placeholder" class="mb-2 rounded">
+                        <p>This is a large card with some information about Option 2.</p>
+                    </div>
+                    <div class="grid grid-cols-1 gap-4">
+                        <div class="bg-gray-600 p-4 rounded-lg">
+                            <h3 class="text-lg font-bold">Small Card 1</h3>
+                            <img src="https://via.placeholder.com/150" alt="Placeholder" class="mb-2 rounded">
+                            <p>This is a small card with info about item 1.</p>
+                        </div>
+                        <div class="bg-gray-600 p-4 rounded-lg">
+                            <h3 class="text-lg font-bold">Small Card 2</h3>
+                            <img src="https://via.placeholder.com/150" alt="Placeholder" class="mb-2 rounded">
+                            <p>This is a small card with info about item 2.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tab3" class="tab-content">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="bg-gray-700 p-4 rounded-lg">
+                        <h3 class="text-lg font-bold">Large Card</h3>
+                        <img src="https://via.placeholder.com/300" alt="Placeholder" class="mb-2 rounded">
+                        <p>This is a large card with some information about Option 3.</p>
+                    </div>
+                    <div class="grid grid-cols-1 gap-4">
+                        <div class="bg-gray-600 p-4 rounded-lg">
+                            <h3 class="text-lg font-bold">Small Card 1</h3>
+                            <img src="https://via.placeholder.com/150" alt="Placeholder" class="mb-2 rounded">
+                            <p>This is a small card with info about item 1.</p>
+                        </div>
+                        <div class="bg-gray-600 p-4 rounded-lg">
+                            <h3 class="text-lg font-bold">Small Card 2</h3>
+                            <img src="https://via.placeholder.com/150" alt="Placeholder" class="mb-2 rounded">
+                            <p>This is a small card with info about item 2.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <div id="footer"></div>
 
-    <script src="js/script.js"></script>
+    <script>
+        const tabTitles = document.querySelectorAll('.tab-title');
+        const tabContents = document.querySelectorAll('.tab-content');
+        const tabTitleElement = document.getElementById('tab-title');
+
+        tabTitles.forEach((tab) => {
+            tab.addEventListener('click', () => {
+                const selectedTab = tab.getAttribute('data-tab');
+
+                // Hide all tab contents
+                tabContents.forEach(content => content.classList.remove('active'));
+
+                // Show the selected tab content
+                document.getElementById(selectedTab).classList.add('active');
+
+                // Update the title
+                tabTitleElement.innerText = tab.innerText;
+            });
+        });
+    </script>
 </body>
 </html>
