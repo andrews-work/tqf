@@ -114,10 +114,8 @@
             tab.addEventListener('click', () => {
                 const selectedTab = tab.getAttribute('data-tab');
 
-                // Hide all tab contents
+                // Hide/show tab content
                 tabContents.forEach(content => content.classList.remove('active'));
-
-                // Show the selected tab content
                 document.getElementById(selectedTab).classList.add('active');
 
                 // Update the title
