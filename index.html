@@ -86,17 +86,16 @@
         <!-- section 2:  -->
         <div class="mb-4">
             <div class="flex space-x-4 text-center mb-4">
-                <button class="tab-title px-4 py-2 border-b-2 border-gray-500 text-gray-900 hover:text-gray-900 focus:outline-none transition duration-300 ease-in-out" data-tab="tab1">
+                <button class="tab-title px-4 py-2 border-b-2 border-gray-500 text-gray-500 hover:text-gray-900 focus:outline-none transition duration-300 ease-in-out" data-tab="tab1">
                     Advisory
                 </button>
-                <button class="tab-title px-4 py-2 border-b-2 border-gray-500 text-gray-900 hover:text-gray-900 focus:outline-none transition duration-300 ease-in-out" data-tab="tab2">
+                <button class="tab-title px-4 py-2 border-b-2 border-gray-500 text-gray-500 hover:text-gray-900 focus:outline-none transition duration-300 ease-in-out" data-tab="tab2">
                     Implementation
                 </button>
-                <button class="tab-title px-4 py-2 border-b-2 border-gray-500 text-gray-900 hover:text-gray-900 focus:outline-none transition duration-300 ease-in-out" data-tab="tab3">
+                <button class="tab-title px-4 py-2 border-b-2 border-gray-500 text-gray-500 hover:text-gray-900 focus:outline-none transition duration-300 ease-in-out" data-tab="tab3">
                     Continuous Innovation
                 </button>
-            </div>
-            
+            </div>            
 
             <div class="mb-4 text-center">
                 <h2 id="tab-title" class="text-2xl font-bold">Oracle Consulting advisory services</h2>
@@ -178,37 +177,38 @@
         const tabTitles = document.querySelectorAll('.tab-title');
         const tabContents = document.querySelectorAll('.tab-content');
         const tabTitleElement = document.getElementById('tab-title');
-        
+
         // Function to handle tab click events
         const handleTabClick = (tab) => {
             const selectedTab = tab.getAttribute('data-tab');
-        
+
             // Hide/show tab content
             tabContents.forEach(content => content.classList.remove('active'));
             document.getElementById(selectedTab).classList.add('active');
-        
+
             // Update the title
             tabTitleElement.innerText = tab.innerText;
-        
+
             // Update active styles for buttons
             tabTitles.forEach(btn => {
                 if (btn === tab) {
-                    btn.classList.add('text-white', 'border-white');
-                    btn.classList.remove('text-gray-300', 'border-gray-500');
+                    btn.classList.add('text-gray-900', 'border-gray-900');
+                    btn.classList.remove('text-gray-500', 'border-gray-500');
                 } else {
-                    btn.classList.remove('text-white', 'border-white');
-                    btn.classList.add('text-gray-300', 'border-gray-500');
+                    btn.classList.remove('text-gray-900', 'border-gray-900');
+                    btn.classList.add('text-gray-500', 'border-gray-500');
                 }
             });
         };
-        
+
         // Attach click event to each tab
         tabTitles.forEach(tab => {
             tab.addEventListener('click', () => handleTabClick(tab));
         });
-        
+
         // Optionally, trigger a click on the first tab to set the initial state
-        handleTabClick(tabTitles[0]);        
+        handleTabClick(tabTitles[0]);
+       
     </script>
 </body>
 </html>
