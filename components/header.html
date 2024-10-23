@@ -35,7 +35,7 @@
         <a href='index.html' class='w-full p-3 text-center'>Home</a>
         <a href='about.html' class='w-full p-3 text-center'>About</a>
         <a href='services.html' class='w-full p-3 text-center '>Services</a>
-        <a href='contact.html' class='w-full p-3 text-center'>Contact</a>
+        <a href='contact.html' class='w-full p-3 text-center border-b border-gray-800'>Contact</a>
     </div>
 </header>
 
@@ -43,5 +43,12 @@
     /* Hover effect for desktop menu items */
     .lg\:flex a:hover {
         border-bottom: none;
+    }
+    #mobile-menu {
+        position: absolute;
+        top: 10vh; 
+        left: 0;
+        right: 0;
+        z-index: 10;
     }
 </style>
