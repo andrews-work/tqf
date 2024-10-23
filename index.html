@@ -13,8 +13,16 @@
         .tab-content.active {
             display: block;
         }
-        .pie-chart {
+        .pie-chart, 
+        .pie-chart2 {
             border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+        .pie-chart {
             background: conic-gradient(
                 #4A90E2 0% 30%,
                 #50E3C2 30% 58%,
@@ -25,7 +33,6 @@
             );
         }
         .pie-chart2 {
-            border-radius: 50%;
             background: conic-gradient(
                 #4A90E2 0% 35%,    
                 #50E3C2 35% 47%,   
@@ -34,15 +41,6 @@
                 #9B59B6 59% 73%,   
                 #3498DB 73% 100%   
             );
-        }
-        .pie-chart,
-        .pie-chart2 {
-            border-radius: 50%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
         }
     </style>
 </head>
@@ -105,19 +103,19 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <!-- Left Column -->
                     <div class="shadow-md rounded-lg p-4">
-                        <h2 class="text-lg font-bold mb-2">Benefits of moving to Cloud</h2>
-                        <div class="relative w-full h-48 md:h-64 overflow-hidden mb-2">
+                        <h2 class="text-lg text-center font-bold mb-2">Benefits of moving to Cloud</h2>
+                        <div class="relative w-full aspect-square overflow-hidden mb-2">
                             <div class="pie-chart w-full h-full"></div>
                         </div>
                         <div class="text-sm text-gray-600">
                             <p>Key for Pie Chart 1: Description of categories and values.</p>
                         </div>
                     </div>
-            
+                
                     <!-- Right Column -->
                     <div class="shadow-md rounded-lg p-4">
-                        <h2 class="text-lg font-bold mb-2">Concerns about Cloud Computing</h2>
-                        <div class="relative w-full h-48 md:h-64 overflow-hidden mb-2">
+                        <h2 class="text-lg text-center font-bold mb-2">Concerns about Cloud Computing</h2>
+                        <div class="relative w-full aspect-square overflow-hidden mb-2">
                             <div class="pie-chart2 w-full h-full"></div>
                         </div>
                         <div class="text-sm text-gray-600">
@@ -126,7 +124,7 @@
                     </div>
                 </div>
             </div>
-        </section>           
+        </section>        
 
         <!-- spacer -->
         <section class="h-24"></section>
