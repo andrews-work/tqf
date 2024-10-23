@@ -1,6 +1,6 @@
 // page loaded
 document.addEventListener("DOMContentLoaded", function() {
-    
+
     // Load header
     fetch('components/header.html')
         .then(response => response.text())
@@ -28,13 +28,13 @@ function setupMobileMenu() {
 
     if (hamburger && mobileMenu && closeMenu) {
         hamburger.addEventListener('click', function() {
-            mobileMenu.classList.remove('hidden');
+            mobileMenu.classList.add('open');
             hamburger.classList.add('hidden');
             closeMenu.classList.remove('hidden');
         });
 
         closeMenu.addEventListener('click', function() {
-            mobileMenu.classList.add('hidden');
+            mobileMenu.classList.remove('open');
             closeMenu.classList.add('hidden');
             hamburger.classList.remove('hidden');
         });
