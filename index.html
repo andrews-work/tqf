@@ -13,6 +13,19 @@
         .tab-content.active {
             display: block;
         }
+        .pie-chart {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background: conic-gradient(
+                #4A90E2 0% 30%,
+                #50E3C2 30% 58%,
+                #F39C12 58% 67%,
+                #E74C3C 67% 74%,
+                #9B59B6 74% 95%,
+                #3498DB 95% 100%
+            );
+        }
     </style>
 </head>
 <body class="bg-gray-100">
@@ -21,9 +34,15 @@
 
     <main class="w-5/6 mx-auto py-4">
 
-        <div class="h-full mb-4">
-            <img src="images/blockchain.jpg" class="w-full rounded" alt="Blockchain">
+        <div class="h-full mb-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="w-full">
+                <img src="images/blockchain.jpg" class="w-full rounded" alt="Blockchain">
+            </div>
+            <div class="w-full">
+                <div class="pie-chart"></div>
+            </div>
         </div>
+        
 
         <div class="mb-4">
 
