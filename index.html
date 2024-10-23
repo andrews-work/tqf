@@ -24,6 +24,11 @@
                 #3498DB 95% 100%
             );
         }
+        .aspect-square {
+            position: relative;
+            width: 100%;
+            padding-top: 100%; /* This maintains the aspect ratio */
+        }
     </style>
 </head>
 <body class="bg-gray-100">
@@ -74,7 +79,7 @@
                 </div>
             </div>
             <div class="w-full flex justify-center items-center">
-                <div class="relative w-1/2 max-w-[500px] aspect-w-1 aspect-h-1 overflow-hidden">
+                <div class="relative w-full max-w-[500px] aspect-square overflow-hidden">
                     <div class="pie-chart w-full h-full"></div>
                 </div>
             </div>
