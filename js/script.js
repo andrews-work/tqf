@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
         .then(response => response.text())
         .then(data => {
             document.getElementById('header').innerHTML = data;
-            setupMobileMenu();
+            setupMobileMenu();  // Call function to set up mobile menu after header is loaded
         });
 
     // Load footer
