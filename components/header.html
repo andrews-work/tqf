@@ -1,4 +1,4 @@
-<header class='flex flex-col items-center w-full bg-gray-100 border-b border-black' style='height: 10vh;'>
+<header class='flex flex-col items-center w-full bg-gray-100  border-b border-black' style='height: 10vh;'>
     <nav class='flex items-center justify-between w-5/6 h-full p-2 text-black'>
 
         <!-- Logo -->
@@ -31,11 +31,11 @@
     </nav>
 
     <!-- Mobile Menu -->
-    <div id='mobile-menu' class='flex flex-col items-center max-h-0 overflow-hidden transition-max-height duration-300 ease-in-out lg:hidden'>
-        <a href='index.html' class='w-full p-3 text-center'>Home</a>
-        <a href='about.html' class='w-full p-3 text-center'>About</a>
-        <a href='services.html' class='w-full p-3 text-center'>Services</a>
-        <a href='contact.html' class='w-full p-3 text-center border-b border-gray-800'>Contact</a>
+    <div id='mobile-menu' class='flex flex-col items-center hidden w-full bg-gray-100 lg:hidden'>
+        <a href='/' class='w-full p-3 text-center'>Home</a>
+        <a href='/about' class='w-full p-3 text-center'>About</a>
+        <a href='/services' class='w-full p-3 text-center '>Services</a>
+        <a href='/contact' class='w-full p-3 text-center'>Contact</a>
     </div>
 </header>
 
@@ -43,15 +43,5 @@
     /* Hover effect for desktop menu items */
     .lg\:flex a:hover {
         border-bottom: none;
-    }
-
-    #mobile-menu {
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.3s ease;
-    }
-
-    #mobile-menu.open {
-        max-height: 500px; /* Adjust based on content */
     }
 </style>
