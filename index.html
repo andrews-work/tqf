@@ -35,18 +35,14 @@
                 #3498DB 73% 100%   
             );
         }
-        .aspect-square {
-            position: relative;
-            width: 100%;
-            padding-top: 100%; /* This maintains the aspect ratio */
-        }
-        
-        .pie-chart {
-            position: absolute; /* Position it absolutely */
+        .pie-chart,
+        .pie-chart2 {
+            border-radius: 50%;
+            position: absolute;
             top: 0;
             left: 0;
             right: 0;
-            bottom: 0; /* Make sure it fills the parent container */
+            bottom: 0;
         }
     </style>
 </head>
@@ -110,18 +106,18 @@
                     <!-- Left Column -->
                     <div class="bg-white shadow-md rounded-lg p-4">
                         <h2 class="text-lg font-bold mb-2">Benefits of moving to Cloud</h2>
-                        <div class="relative w-full h-64 overflow-hidden mb-2">
+                        <div class="relative w-full h-48 md:h-64 overflow-hidden mb-2">
                             <div class="pie-chart w-full h-full"></div>
                         </div>
                         <div class="text-sm text-gray-600">
                             <p>Key for Pie Chart 1: Description of categories and values.</p>
                         </div>
                     </div>
-        
+            
                     <!-- Right Column -->
                     <div class="bg-white shadow-md rounded-lg p-4">
-                        <h2 class="text-lg font-bold mb-2">Concers about Cloud Computing</h2>
-                        <div class="relative w-full h-64 overflow-hidden mb-2">
+                        <h2 class="text-lg font-bold mb-2">Concerns about Cloud Computing</h2>
+                        <div class="relative w-full h-48 md:h-64 overflow-hidden mb-2">
                             <div class="pie-chart2 w-full h-full"></div>
                         </div>
                         <div class="text-sm text-gray-600">
@@ -130,7 +126,7 @@
                     </div>
                 </div>
             </div>
-        </section>             
+        </section>           
 
         <!-- spacer -->
         <section class="h-24"></section>
