@@ -32,6 +32,16 @@
 
     <main class="w-5/6 mx-auto py-4">
 
+
+        <!-- spacer -->
+        <section class="h-24"></section>
+        <!-- Section 1: Who We Are -->
+        <section class="text-center mb-10 mt-5 h-1/4">
+            <div class="grid grid-cols-1">
+                <h2 class="text-6xl font-bold">ERP Management Consultant Firm</h2>
+            </div>
+        </section>
+
          <!-- section 1:  -->
         <div class="h-full mb-4 grid grid-cols-1 md:grid-cols-2 gap-4 bg-white rounded">
             <div class="w-full">
@@ -75,10 +85,17 @@
         <!-- section 2:  -->
         <div class="mb-4">
             <div class="flex space-x-4 text-center mb-4">
-                <button class="tab-title px-4 py-2 rounded bg-gray-700 text-white" data-tab="tab1">Advisory</button>
-                <button class="tab-title px-4 py-2 rounded bg-gray-700 text-white" data-tab="tab2">Implementation</button>
-                <button class="tab-title px-4 py-2 rounded bg-gray-700 text-white" data-tab="tab3">Continuous Innovation</button>
+                <button class="tab-title px-4 py-2 border-b-2 border-gray-500 text-gray-300 hover:text-white focus:outline-none transition duration-300 ease-in-out" data-tab="tab1">
+                    Advisory
+                </button>
+                <button class="tab-title px-4 py-2 border-b-2 border-gray-500 text-gray-300 hover:text-white focus:outline-none transition duration-300 ease-in-out" data-tab="tab2">
+                    Implementation
+                </button>
+                <button class="tab-title px-4 py-2 border-b-2 border-gray-500 text-gray-300 hover:text-white focus:outline-none transition duration-300 ease-in-out" data-tab="tab3">
+                    Continuous Innovation
+                </button>
             </div>
+            
 
             <div class="mb-4 text-center">
                 <h2 id="tab-title" class="text-2xl font-bold">Oracle Consulting advisory services</h2>
@@ -160,22 +177,37 @@
         const tabTitles = document.querySelectorAll('.tab-title');
         const tabContents = document.querySelectorAll('.tab-content');
         const tabTitleElement = document.getElementById('tab-title');
-
-        tabTitles.forEach((tab) => {
-            tab.addEventListener('click', () => {
-                const selectedTab = tab.getAttribute('data-tab');
-
-                // Hide/show tab content
-                tabContents.forEach(content => content.classList.remove('active'));
-                document.getElementById(selectedTab).classList.add('active');
-
-                // Update the title
-                tabTitleElement.innerText = tab.innerText;
+        
+        // Function to handle tab click events
+        const handleTabClick = (tab) => {
+            const selectedTab = tab.getAttribute('data-tab');
+        
+            // Hide/show tab content
+            tabContents.forEach(content => content.classList.remove('active'));
+            document.getElementById(selectedTab).classList.add('active');
+        
+            // Update the title
+            tabTitleElement.innerText = tab.innerText;
+        
+            // Update active styles for buttons
+            tabTitles.forEach(btn => {
+                if (btn === tab) {
+                    btn.classList.add('text-white', 'border-white');
+                    btn.classList.remove('text-gray-300', 'border-gray-500');
+                } else {
+                    btn.classList.remove('text-white', 'border-white');
+                    btn.classList.add('text-gray-300', 'border-gray-500');
+                }
             });
+        };
+        
+        // Attach click event to each tab
+        tabTitles.forEach(tab => {
+            tab.addEventListener('click', () => handleTabClick(tab));
         });
-
+        
         // Optionally, trigger a click on the first tab to set the initial state
-        tabTitles[0].click();
+        handleTabClick(tabTitles[0]);        
     </script>
 </body>
 </html>
