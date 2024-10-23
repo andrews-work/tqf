@@ -50,7 +50,7 @@
         <!-- spacer -->
         <section class="h-12"></section>
 
-        <!-- Section 1: Who We Are -->
+        <!-- Section 1: title -->
         <section class="text-center mb-10 mt-5 h-1/4">
             <div class="grid grid-cols-1">
                 <h2 class="text-6xl font-bold">ERP Management Consultant Firm</h2>
@@ -60,7 +60,7 @@
         <!-- spacer -->
         <section class="h-12"></section>
 
-        <!-- section 1:  -->
+        <!-- section 2: cards -->
         <section class="h-full mb-4 bg-white rounded">
             <div class="grid grid-cols-1 md:grid-cols-5 gap-4 p-4">
                 <div class="bg-gray-100 shadow-md rounded-lg p-6">
@@ -93,6 +93,7 @@
         <!-- spacer -->
         <section class="h-12"></section>
 
+        <!-- section 3 - pie chart -->
         <section class="">
             <div class="w-full flex justify-center items-center py-4">
                 <div class="relative w-full max-w-[500px] h-64 overflow-hidden">
@@ -104,8 +105,10 @@
         <!-- spacer -->
         <section class="h-24"></section>
         
-        <!-- section 2:  -->
+        <!-- section 4: tabs -->
         <div class="mb-4">
+
+            <!-- tab titles -->
             <div class="flex justify-center space-x-4 mb-4">
                 <button class="tab-title w-64 px-4 py-2 border-b-2 border-gray-500 text-gray-500 hover:text-gray-900 focus:outline-none transition duration-300 ease-in-out" data-tab="tab1">
                     Advisory
@@ -119,14 +122,15 @@
                 <button class="tab-title w-64 px-4 py-2 border-b-2 border-gray-500 text-gray-500 hover:text-gray-900 focus:outline-none transition duration-300 ease-in-out" data-tab="tab4">
                     On-Premises
                 </button>
-            </div>         
+            </div>        
             
             <!-- spacer -->
             <section class="h-24"></section>
 
+            <!-- tab 1 -->
             <div id="tab1" class="tab-content active">
 
-                <h1 class="py-5">
+                <h1 class="py-5 text-center text-3xl">
                     Oracle Consulting advisory services
                 </h1>
 
@@ -151,9 +155,10 @@
                 </div>
             </div>
 
+            <!-- tab 2 -->
             <div id="tab2" class="tab-content">
 
-                <h1 class="py-5">
+                <h1 class="py-5 text-center text-3xl">
                     Oracle Consulting advisory services
                 </h1>
 
@@ -179,9 +184,10 @@
                 </div>
             </div>
 
+            <!-- tab 3 -->
             <div id="tab3" class="tab-content">
 
-                <h1 class="py-5">
+                <h1 class="py-5 text-center text-3xl">
                     Oracle Consulting advisory services
                 </h1>
 
@@ -206,9 +212,10 @@
                 </div>
             </div>
 
+            <!-- tab 4 -->
             <div id="tab4" class="tab-content">
 
-                <h1 class="py-5">
+                <h1 class="py-5 text-center text-3xl">
                     Oracle Consulting advisory services
                 </h1>
 
@@ -257,17 +264,14 @@
             tabContents.forEach(content => content.classList.remove('active'));
             document.getElementById(selectedTab).classList.add('active');
 
-            // Update the title
-            tabTitleElement.innerText = tab.innerText;
-
             // Update active styles for buttons
             tabTitles.forEach(btn => {
                 if (btn === tab) {
-                    btn.classList.add('text-black', 'border-black');
+                    btn.classList.add('text-black', 'border-black'); // Active styles
                     btn.classList.remove('text-gray-500', 'border-gray-500');
                 } else {
                     btn.classList.remove('text-black', 'border-black');
-                    btn.classList.add('text-gray-500', 'border-gray-500');
+                    btn.classList.add('text-gray-500', 'border-gray-500'); // Inactive styles
                 }
             });
         };
