@@ -8,7 +8,7 @@
 
         <!-- Menu Items for Desktop -->
         <div class='items-center justify-center hidden w-2/6 space-x-5 lg:flex'>
-            <a href='index.html' class='border-b border-gray-800 hover:border-b-0'>Home</a>
+            <a href='index.html' class='border-b border-gray-800 hover:border-b-0 active'>Home</a>
             <a href='about.html' class='border-b border-gray-800 mr-5 hover:border-b-0'>About</a>
             <a href='services.html' class='border-b border-gray-800 hover:border-b-0'>Services</a>
             <a href='contact.html' class='border-b border-gray-800 mr-5 hover:border-b-0'>Contact</a>
@@ -59,13 +59,13 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', () => {
-        const currentLocation = window.location.pathname;
+        const currentLocation = window.location.pathname.split('/').pop(); // Get the current page name
         const navLinks = document.querySelectorAll('nav a');
-
+    
         navLinks.forEach(link => {
             if (link.getAttribute('href') === currentLocation) {
                 link.classList.add('active');
             }
         });
-    });
+    });    
 </script>
