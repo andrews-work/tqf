@@ -51,4 +51,21 @@
         right: 0;
         z-index: 10;
     }
+    /* Active link styling */
+    .active {
+        border-bottom: none; /* Remove border on active */
+    }
 </style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const currentLocation = window.location.pathname;
+        const navLinks = document.querySelectorAll('nav a');
+
+        navLinks.forEach(link => {
+            if (link.getAttribute('href') === currentLocation) {
+                link.classList.add('active');
+            }
+        });
+    });
+</script>
