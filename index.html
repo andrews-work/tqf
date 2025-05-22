@@ -3,449 +3,355 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>The Quantum Fox - Oracle ERP Cloud Specialists | Sydney</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        .gradient-text {
-            background: radial-gradient(circle, #696969 0%, #131313 81%);
-            color: transparent;
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-fill-color: transparent;
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e3c72',
+                        secondary: '#2a5298',
+                        accent: '#ff6b35',
+                        accentDark: '#e55a2b',
+                    }
+                }
+            }
         }
-        
-        .relative {
-            max-width: 400px;
-            max-height: 400px;
-        }
-        .pie-chart, .pie-chart2 {
-            border-radius: 50%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            width: 100%;
-            height: 100%;
-            max-width: 100%;
-            max-height: 100%;
-        }
-        .pie-chart {
-            background: conic-gradient(
-                #165ba9 0% 30%,
-                #50E3C2 30% 58%,
-                #F39C12 58% 67%,
-                #E74C3C 67% 74%,
-                #9B59B6 74% 95%,
-                #3498DB 95% 100%
-            );
-        }
-        .pie-chart2 {
-            background: conic-gradient(
-                #165ba9  0% 35%,    
-                #50E3C2 35% 47%,   
-                #F39C12 47% 51%,   
-                #E74C3C 51% 59%,   
-                #9B59B6 59% 73%,   
-                #3498DB 73% 100%   
-            );
-        }
-
-        .tab-content {
-            display: none;
-        }
-        .tab-content.active {
-            display: block;
-        }
-    </style>
+    </script>
 </head>
-<body class="bg-gray-100">
-
-    <div id="header"></div>
-
-    <main class="flex flex-col items-center mx-auto py-4">
-
-        <!-- spacer -->
-        <section class="h-12"></section>
-
-        <!-- Section 1: title -->
-        <section class="w-5/6 text-center mb-10 mt-5 h-1/4">
-            <div class="grid grid-cols-1">
-                <h2 class="text-3xl md:text-6xl font-bold gradient-text">ERP Management Consultant Firm</h2>
-                <h3 class="text-lg md:text-3xl font-bold gradient-text mt-5">Based in Sydney, Australia</h3>
-            </div>
-        </section>
-
-        <!-- spacer -->
-        <section class="h-12"></section>
-
-        <!-- section 2: cards -->
-        <section class="w-5/6 h-full mb-4 bg-white rounded">
-            <div class="grid grid-cols-1 lg:grid-cols-5 gap-4 p-4">
-                <div class="bg-gray-100 shadow-md rounded-lg p-6">
-                    <h2 class="font-bold text-lg mb-2">Hosting Solution</h2>
-                    <p>Transactional and customer data are securely housed at the provider’s data centre, ensuring all hardware and infrastructure are managed by experts.</p>
-                </div>
-
-                <div class="bg-gray-100 shadow-md rounded-lg p-6">
-                    <h2 class="font-bold text-lg mb-2">Web-Based Access</h2>
-                    <p>Access the application securely from anywhere—whether at home, on a mobile device, or across different operating systems in remote locations.</p>
-                </div>
-
-                <div class="bg-gray-100 shadow-md rounded-lg p-6">
-                    <h2 class="font-bold text-lg mb-2">Cost Efficiency</h2>
-                    <p>Designed for multi-tenancy, this solution can be over 50% cheaper to run than its on-premise alternatives, optimizing your budget.</p>
-                </div>
-
-                <div class="bg-gray-100 shadow-md rounded-lg p-6">
-                    <h2 class="font-bold text-lg mb-2">Automated Upgrades</h2>
-                    <p>Enjoy a single version of the application with automated upgrades and new features, eliminating the need for manual patching and upgrades.</p>
-                </div>
-
-                <div class="bg-gray-100 shadow-md rounded-lg p-6">
-                    <h2 class="font-bold text-lg mb-2">Seamless Customization</h2>
-                    <p>Customizations made within the system are automatically upgraded, ensuring your enhancements are preserved without needing re-implementation.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- spacer -->
-        <section class="h-12"></section>
-
-        <!-- Section 3 - Pie Charts -->
-        <section class="w-5/6 py-4">
-            <div class="container mx-auto">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <!-- Left Column -->
-                    <div class="p-4">
-                        <h2 class="text-lg text-center font-bold mb-4">Benefits of Moving to Cloud</h2>
-
-                        <section class="h-12"></section>
-
-                        <div class="flex justify-center mb-4"> <!-- Centering the pie chart -->
-                            <div class="relative w-full aspect-square overflow-hidden">
-                                <div class="pie-chart w-full h-full"></div>
-                            </div>
-                        </div>
-
-                        <section class="h-12"></section>
-
-                        <div class="text-sm text-gray-600 mt-4 ml-8 md:ml-20 lg:ml-40"> <!-- Added margin for spacing -->
-                            <div class="flex items-center mb-1">
-                                <div class="w-3 h-3 mr-2" style="background-color: #165ba9;"></div>
-                                <span class="text-left">30% - Speed of Deployment</span>
-                            </div>
-                            <div class="flex items-center mb-1">
-                                <div class="w-3 h-3 mr-2" style="background-color: #50E3C2;"></div>
-                                <span class="text-left">28% - Lower Cost of Ownership</span>
-                            </div>
-                            <div class="flex items-center mb-1">
-                                <div class="w-3 h-3 mr-2" style="background-color: #F39C12;"></div>
-                                <span class="text-left">9% - Access Data, Anytime, Anywhere</span>
-                            </div>
-                            <div class="flex items-center mb-1">
-                                <div class="w-3 h-3 mr-2" style="background-color: #E74C3C;"></div>
-                                <span class="text-left">7% - Easy Upgrades</span>
-                            </div>
-                            <div class="flex items-center mb-1">
-                                <div class="w-3 h-3 mr-2" style="background-color: #9B59B6;"></div>
-                                <span class="text-left">21% - Lower CapEx</span>
-                            </div>
-                            <div class="flex items-center mb-1">
-                                <div class="w-3 h-3 mr-2" style="background-color: #3498DB;"></div>
-                                <span class="text-left">5% - Streamline Business Processes</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Right Column -->
-                    <div class="p-4">
-                        <h2 class="text-lg text-center font-bold mb-4">Concerns about Cloud Computing</h2>
-
-                        <section class="h-12"></section>
-
-                        <div class="flex justify-center mb-4"> <!-- Centering the pie chart -->
-                            <div class="relative w-full aspect-square overflow-hidden">
-                                <div class="pie-chart2 w-full h-full"></div>
-                            </div>
-                        </div>
-
-                        <section class="h-12"></section>
-
-                        <div class="text-sm text-gray-600 mt-4 ml-8 md:ml-20 lg:ml-40"> <!-- Added margin for spacing -->
-                            <div class="flex items-center mb-1">
-                                <div class="w-3 h-3 mr-2" style="background-color: #165ba9;"></div>
-                                <span class="text-left">35% - Security</span>
-                            </div>
-                            <div class="flex items-center mb-1">
-                                <div class="w-3 h-3 mr-2" style="background-color: #50E3C2;"></div>
-                                <span class="text-left">12% - Data Ownership</span>
-                            </div>
-                            <div class="flex items-center mb-1">
-                                <div class="w-3 h-3 mr-2" style="background-color: #F39C12;"></div>
-                                <span class="text-left">4% - Application Ownership</span>
-                            </div>
-                            <div class="flex items-center mb-1">
-                                <div class="w-3 h-3 mr-2" style="background-color: #E74C3C;"></div>
-                                <span class="text-left">14% - Reliability</span>
-                            </div>
-                            <div class="flex items-center mb-1">
-                                <div class="w-3 h-3 mr-2" style="background-color: #9B59B6;"></div>
-                                <span class="text-left">8% - Maturity vs On-Premise</span>
-                            </div>
-                            <div class="flex items-center mb-1">
-                                <div class="w-3 h-3 mr-2" style="background-color: #3498DB;"></div>
-                                <span class="text-left">18% - Customisation</span>
-                            </div>
-                            <div class="flex items-center mb-1">
-                                <div class="w-3 h-3 mr-2" style="background-color: #E74C3C;"></div>
-                                <span class="text-left">9% - No Substantial Concerns</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- spacer -->
-        <section class="h-24"></section>
-
-        <!-- section 4 - choose us -->
-        <section class="w-5/6 py-4">
-            <div class="container mx-auto">
-                <h2 class="text-2xl text-center font-bold mb-6">Why Choose Us?</h2>
+<body class="font-sans text-gray-800 leading-relaxed">
     
-                <!-- spacer -->
-                <section class="h-12"></section>
+    <!-- Header -->
+    <header class="bg-accent text-white py-5 sticky top-0 z-50">
+    <div class="container mx-auto px-5">
+        <nav class="flex justify-between items-center">
+            <div class="text-2xl font-bold">The Quantum Fox</div>
+            <ul class="flex space-x-8">
+                <li><a href="index.html" class="hover:text-primary transition-colors">Home</a></li>
+                <li><a href="services.html" class="hover:text-primary transition-colors">Services</a></li>
+                <li><a href="contact.html" id="contact" class="hover:text-primary transition-colors target:text-primary">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+  </header>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-                    <!-- Card 1 -->
-                    <div class="bg-white shadow-lg rounded-lg p-6">
-                        <h3 class="text-lg font-bold mb-2">1. Expertise</h3>
-                        <p>Our consultants have over 20 years of experience in ERP consulting, with specialised knowledge in Oracle ERP Cloud. We’ve successfully delivered ERP transformations for some of Australia’s leading organisations across various industries.</p>
-                    </div>
-        
-                    <!-- Card 2 -->
-                    <div class="bg-white shadow-lg rounded-lg p-6">
-                        <h3 class="text-lg font-bold mb-2">2. Client-Centric Approach</h3>
-                        <p>At TheQuantumFox, we focus on understanding your business needs and providing tailored solutions that deliver tangible results. Our goal is to not only meet but exceed your expectations at every stage of the project.</p>
-                    </div>
-        
-                    <!-- Card 3 -->
-                    <div class="bg-white shadow-lg rounded-lg p-6">
-                        <h3 class="text-lg font-bold mb-2">3. Proven Track Record</h3>
-                        <p>We pride ourselves on a strong track record of delivering Oracle ERP Cloud solutions on time and within budget. Our deep domain expertise ensures that we deliver high-value, scalable solutions that future-proof your business.</p>
-                    </div>
-        
-                    <!-- Card 4 -->
-                    <div class="bg-white shadow-lg rounded-lg p-6">
-                        <h3 class="text-lg font-bold mb-2">4. End-to-End Solutions</h3>
-                        <p>From initial planning and deployment to post-go-live support and optimisation, we provide end-to-end Oracle ERP Cloud consulting services that help your business unlock its full potential.</p>
-                    </div>
+    <!-- Hero Section -->
+    <section class="bg-primary text-white py-20 text-center">
+        <div class="container mx-auto px-5">
+            <h1 class="text-5xl font-bold mb-5">The Quantum Fox</h1>
+            <div class="text-2xl mb-4 opacity-90">Oracle ERP Cloud Specialists</div>
+            <div class="text-lg mb-10 opacity-80">Sydney, Australia</div>
+            <p class="text-xl mb-10 max-w-3xl mx-auto">
+                Specialized ERP Management Consulting for Cloud Solutions (SaaS, PaaS & IaaS). 70+ successful engagements across government, health, financial services, manufacturing & education sectors.
+            </p>
+            <a href="contact.html" class="bg-accent text-white px-8 py-4 rounded-lg text-lg font-medium inline-block mx-2 hover:bg-accentDark hover:-translate-y-0.5 transition-all">Start Your Transformation</a>
+            <a href="services.html" class="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-medium inline-block mx-2 hover:bg-white hover:text-primary transition-all">Explore Our Services</a>
+        </div>
+    </section>
+
+    <!-- Key Stats -->
+    <section class="bg-gray-50 py-16">
+        <div class="container mx-auto px-5">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 text-center">
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="text-5xl font-bold text-primary mb-3">70+</div>
+                    <div class="text-lg text-gray-600">ERP Engagements Delivered</div>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="text-5xl font-bold text-primary mb-3">20+</div>
+                    <div class="text-lg text-gray-600">Years of ERP Expertise</div>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="text-5xl font-bold text-primary mb-3">50%</div>
+                    <div class="text-lg text-gray-600">Cost Savings vs On-Premise</div>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="text-5xl font-bold text-primary mb-3">5</div>
+                    <div class="text-lg text-gray-600">Industry Sectors</div>
                 </div>
             </div>
-        </section>
-        
-        <!-- spacer -->
-        <section class="h-24"></section>
-        
-        <!-- section 5: tabs -->
-        <div class="w-full mb-4 bg-white">
-            <div class="w-5/6 mx-auto">
+        </div>
+    </section>
 
-                <!-- spacer -->
-                <section class="h-12"></section>
-
-                <!-- title -->
-                <div class="mx-auto">
-                    <h1 class="text-center text-3xl md:text-5xl">Explore Oracle Consulting’s ERP services</h1>
-                </div> 
-
-                <!-- spacer -->
-                <section class="h-12"></section>
-
-                <!-- Tab Titles -->
-                <div class="grid grid-cols-1 sm:grid-cols-4 gap-4 mb-4">
-                    <button class="tab-title w-full px-4 py-2 border-b-2 border-gray-500 text-gray-500 hover:text-gray-900 focus:outline-none transition duration-300 ease-in-out" data-tab="tab1">
-                        Advisory
-                    </button>
-                    <button class="tab-title w-full px-4 py-2 border-b-2 border-gray-500 text-gray-500 hover:text-gray-900 focus:outline-none transition duration-300 ease-in-out" data-tab="tab2">
-                        Implementation
-                    </button>
-                    <button class="tab-title w-full px-4 py-2 border-b-2 border-gray-500 text-gray-500 hover:text-gray-900 focus:outline-none transition duration-300 ease-in-out" data-tab="tab3">
-                        Continuous Innovation
-                    </button>
-                    <button class="tab-title w-full px-4 py-2 border-b-2 border-gray-500 text-gray-500 hover:text-gray-900 focus:outline-none transition duration-300 ease-in-out" data-tab="tab4">
-                        On-Premises
-                    </button>
+    <!-- Who We Are & Problem Statement -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-5">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold text-primary mb-8">Who We Are</h2>
+                    <p class="text-xl mb-6">
+                        TheQuantumFox is an ERP Management Consulting firm specialized in Cloud solutions (SaaS, PaaS and IaaS) and digital transformation based in Australia.
+                    </p>
+                    <p class="text-gray-600 mb-8">
+                        Our experienced consultants have delivered <strong>70 ERP engagements</strong> across government, health, financial services, councils, manufacturing & education industries.
+                    </p>
+                    
+                    <!-- Industry Grid -->
+                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 mt-8">
+                        <div class="bg-gray-50 p-4 text-center rounded-lg border-l-4 border-accent">
+                            <div class="text-3xl mb-2">🏛️</div>
+                            <div class="font-bold text-primary">Government</div>
+                        </div>
+                        <div class="bg-gray-50 p-4 text-center rounded-lg border-l-4 border-primary">
+                            <div class="text-3xl mb-2">🏥</div>
+                            <div class="font-bold text-primary">Health</div>
+                        </div>
+                        <div class="bg-gray-50 p-4 text-center rounded-lg border-l-4 border-accent">
+                            <div class="text-3xl mb-2">🏦</div>
+                            <div class="font-bold text-primary">Financial</div>
+                        </div>
+                        <div class="bg-gray-50 p-4 text-center rounded-lg border-l-4 border-primary">
+                            <div class="text-3xl mb-2">🏭</div>
+                            <div class="font-bold text-primary">Manufacturing</div>
+                        </div>
+                        <div class="bg-gray-50 p-4 text-center rounded-lg border-l-4 border-accent">
+                            <div class="text-3xl mb-2">🎓</div>
+                            <div class="font-bold text-primary">Education</div>
+                        </div>
+                    </div>
                 </div>
                 
-                <!-- spacer -->
-                <section class="h-12"></section>
-
-                <!-- tab 1 -->
-                <div id="tab1" class="tab-content active">
-
-                    <h1 class="py-5 text-center text-3xl">
-                        Oracle Consulting advisory services
-                    </h1>
-
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div class="bg-gray-100 p-4 rounded-lg">
-                            <h3 class="text-lg font-bold">Cloud roadmap services</h3>
-                            <img src="https://via.placeholder.com/300" alt="Placeholder" class="mb-2 rounded">
-                            <p>We help our on-premises clients build their own unique roadmap to the cloud. We assess applications for customizations, benchmark against industry peers, and provide a chain of benefits roadmap linked to initiatives with specific, measurable outcomes..</p>
-                        </div>
-                        <div class="grid grid-cols-1 gap-4">
-                            <div class="bg-gray-100 p-4 rounded-lg">
-                                <h3 class="text-lg font-bold">Phase 0 services</h3>
-                                <img src="https://via.placeholder.com/150" alt="Placeholder" class="mb-2 rounded">
-                                <p>Our complimentary Phase 0 preimplementation services deliver a prescriptive roadmap for clients ready to move to Oracle Cloud. With clear project milestones, stakeholder alignment on goals and expectations, and industry-leading risk mitigation, Phase 0 can launch any cloud implementation toward success.</p>
-                            </div>
-                            <div class="bg-gray-100 p-4 rounded-lg">
-                                <h3 class="text-lg font-bold">Delivery advisory services</h3>
-                                <img src="https://via.placeholder.com/150" alt="Placeholder" class="mb-2 rounded">
-                                <p>Making the right decisions and identifying issues early on can positively affect the overall cost, delivery timeline, and quality of an implementation. Throughout all phases of your cloud implementation, we offer proactive and targeted delivery advisory services to help clients and partners deploy projects on time, on budget, and with minimal risk..</p>
-                            </div>
-                        </div>
+                <div class="bg-gradient-to-br from-primary to-secondary p-10 rounded-xl text-white">
+                    <h3 class="text-3xl mb-6 text-accent">Is Your ERP Holding You Back?</h3>
+                    <p class="mb-5">
+                        When was the last time you upgraded your ERP system? If the answer is "not in recent memory," then you aren't alone.
+                    </p>
+                    <p class="mb-6">
+                        About <strong>two-thirds of mid-sized businesses</strong> are running old versions of their enterprise resource planning (ERP) system - in some cases, it's software that's three or more versions old.
+                    </p>
+                    <div class="bg-white bg-opacity-10 p-5 rounded-lg mb-5">
+                        <h4 class="mb-4 text-accent">Common Legacy Challenges:</h4>
+                        <ul class="space-y-2">
+                            <li>✓ Decades of on-premise deployments</li>
+                            <li>✓ Incremental releases never worth upgrading</li>
+                            <li>✓ Fear of losing critical customizations</li>
+                            <li>✓ Complex migration projects</li>
+                        </ul>
                     </div>
-                </div>
-
-                <!-- tab 2 -->
-                <div id="tab2" class="tab-content">
-
-                    <h1 class="py-5 text-center text-3xl">
-                        Oracle Consulting implementation services
-                    </h1>
-
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div class="bg-white p-4 rounded-lg">
-                            <h3 class="text-lg font-bold">Implementation services
-                            </h3>
-                            <img src="https://via.placeholder.com/300" alt="Placeholder" class="mb-2 rounded">
-                            <p>Move to Oracle Cloud ERP fast with Oracle Consulting’s Implementation Accelerators. Oracle Soar, our automated upgrade to the cloud, gets you to the cloud faster, smarter, and at a lower cost. What’s more, our newest offering for healthcare, Oracle Leap, jump-starts the cloud transition by leveraging prebuilt industry configurations to speed implementations, lower costs, and reduce risks.</p>
-                        </div>
-                        <div class="grid grid-cols-1 gap-4">
-                            <div class="bg-white p-4 rounded-lg">
-                                <h3 class="text-lg font-bold">Change management and transformation services</h3>
-                                <img src="https://via.placeholder.com/150" alt="Placeholder" class="mb-2 rounded">
-                                <p>Moving to the cloud is more than a software upgrade. It’s an organization-wide shift in mindset, culture, and work processes. Oracle Consulting’s Change Management and Transformation team equips our clients with the outlook, methodology, tools, and resources to successfully journey to the cloud.</p>
-                            </div>
-                            <div class="bg-white p-4 rounded-lg">
-                                <h3 class="text-lg font-bold">Small Card 2</h3>
-                                <img src="https://via.placeholder.com/150" alt="Placeholder" class="mb-2 rounded">
-                                <p>This is a small card with info about item 2.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- tab 3 -->
-                <div id="tab3" class="tab-content">
-
-                    <h1 class="py-5 text-center text-3xl">
-                        Oracle Consulting post-implementation services
-                    </h1>
-
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div class="bg-white p-4 rounded-lg">
-                            <h3 class="text-lg font-bold">Oracle Evolve services</h3>
-                            <img src="https://via.placeholder.com/300" alt="Placeholder" class="mb-2 rounded">
-                            <p>We help companies deliver continuous improvement through innovation. To do this, we help your team develop a self-sufficient post-production organization, create an improved solution to help maximize the subscription benefits, and realize business value by optimizing the solution and offering quarterly Oracle product innovations.</p>
-                        </div>
-                        <div class="grid grid-cols-1 gap-4">
-                            <div class="bg-white p-4 rounded-lg">
-                                <h3 class="text-lg font-bold">Small Card 1</h3>
-                                <img src="" alt="Placeholder" class="mb-2 rounded">
-                                <p>This is a small card with info about item 1.</p>
-                            </div>
-                            <div class="bg-white p-4 rounded-lg">
-                                <h3 class="text-lg font-bold">Small Card 2</h3>
-                                <img src="https://via.placeholder.com/150" alt="Placeholder" class="mb-2 rounded">
-                                <p>This is a small card with info about item 2.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- tab 4 -->
-                <div id="tab4" class="tab-content">
-
-                    <h1 class="py-5 text-center text-3xl">
-                        Oracle Consulting on-premises services
-                    </h1>
-
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div class="bg-white p-4 rounded-lg">
-                            <h3 class="text-lg font-bold">Oracle Consulting on-premises services</h3>
-                            <img src="https://via.placeholder.com/300" alt="Placeholder" class="mb-2 rounded">
-                            <p>For customers who aren’t ready to move to the cloud, we offer a variety of on-premises services to maximize the value of their current environment and plan their move to the cloud. We provide advisory, implementation, and post-implementation services for EBS, JD Edwards, Hyperion, and PeopleSoft.</p>
-                        </div>
-                        <div class="grid grid-cols-1 gap-4">
-                            <div class="bg-white p-4 rounded-lg">
-                                <h3 class="text-lg font-bold">Small Card 1</h3>
-                                <img src="https://via.placeholder.com/150" alt="Placeholder" class="mb-2 rounded">
-                                <p>This is a small card with info about item 1.</p>
-                            </div>
-                            <div class="bg-white p-4 rounded-lg">
-                                <h3 class="text-lg font-bold">Small Card 2</h3>
-                                <img src="https://via.placeholder.com/150" alt="Placeholder" class="mb-2 rounded">
-                                <p>This is a small card with info about item 2.</p>
-                            </div>
-                        </div>
-                    </div>
+                    <p class="italic opacity-90">
+                        We help organizations break free from legacy constraints and embrace modern cloud ERP solutions.
+                    </p>
                 </div>
             </div>
-
-            <!-- spacer -->
-            <section class="h-24"></section>
-
         </div>
+    </section>
 
-        <!-- spacer -->
-        <section class="h-24"></section>
+    <!-- Solutions Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-5">
+            <h2 class="text-4xl font-bold text-primary text-center mb-5">Why Oracle ERP Cloud?</h2>
+            <p class="text-xl text-gray-600 text-center max-w-2xl mx-auto mb-16">
+                Experience the power of modern, secure, and cost-effective enterprise solutions designed for today's digital business environment.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:-translate-y-1 transition-transform">
+                    <div class="text-5xl mb-5 text-accent">🛡️</div>
+                    <h3 class="text-2xl font-bold text-primary mb-4">Enterprise Security</h3>
+                    <p>Your data is securely housed in world-class data centers with expert-managed infrastructure, ensuring maximum protection and compliance.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:-translate-y-1 transition-transform">
+                    <div class="text-5xl mb-5 text-accent">🌐</div>
+                    <h3 class="text-2xl font-bold text-primary mb-4">Universal Access</h3>
+                    <p>Access your ERP system securely from anywhere—office, home, mobile devices, or remote locations across any operating system.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:-translate-y-1 transition-transform">
+                    <div class="text-5xl mb-5 text-accent">💰</div>
+                    <h3 class="text-2xl font-bold text-primary mb-4">Cost Efficiency</h3>
+                    <p>Multi-tenant cloud architecture delivers over 50% cost savings compared to on-premise alternatives while optimizing your technology budget.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:-translate-y-1 transition-transform">
+                    <div class="text-5xl mb-5 text-accent">🔄</div>
+                    <h3 class="text-2xl font-bold text-primary mb-4">Automated Upgrades</h3>
+                    <p>Enjoy continuous innovation with automated upgrades and new features, eliminating manual patching and minimizing downtime.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:-translate-y-1 transition-transform">
+                    <div class="text-5xl mb-5 text-accent">⚙️</div>
+                    <h3 class="text-2xl font-bold text-primary mb-4">Seamless Customization</h3>
+                    <p>Your customizations are automatically preserved during upgrades, ensuring your business-specific enhancements remain intact.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:-translate-y-1 transition-transform">
+                    <div class="text-5xl mb-5 text-accent">📊</div>
+                    <h3 class="text-2xl font-bold text-primary mb-4">Real-Time Insights</h3>
+                    <p>Gain immediate access to business intelligence and analytics that drive informed decision-making and competitive advantage.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    </main>
+    <!-- Benefits -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-5">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold text-primary mb-8">Proven Business Impact</h2>
+                    <p class="text-gray-600 mb-8">
+                        Our Oracle ERP Cloud implementations deliver measurable results that transform business operations and drive sustainable growth.
+                    </p>
+                    <div class="space-y-5">
+                        <div class="flex items-center">
+                            <div class="bg-accent text-white px-4 py-2 rounded-full font-bold mr-5 min-w-[60px] text-center">30%</div>
+                            <div class="text-lg">Faster Speed of Deployment</div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-accent text-white px-4 py-2 rounded-full font-bold mr-5 min-w-[60px] text-center">28%</div>
+                            <div class="text-lg">Lower Total Cost of Ownership</div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-accent text-white px-4 py-2 rounded-full font-bold mr-5 min-w-[60px] text-center">21%</div>
+                            <div class="text-lg">Reduced Capital Expenditure</div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-accent text-white px-4 py-2 rounded-full font-bold mr-5 min-w-[60px] text-center">9%</div>
+                            <div class="text-lg">Enhanced Data Accessibility</div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-accent text-white px-4 py-2 rounded-full font-bold mr-5 min-w-[60px] text-center">7%</div>
+                            <div class="text-lg">Simplified Upgrade Process</div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-accent text-white px-4 py-2 rounded-full font-bold mr-5 min-w-[60px] text-center">5%</div>
+                            <div class="text-lg">Streamlined Business Processes</div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="/api/placeholder/500/400" alt="ERP Benefits Visualization" class="w-full rounded-xl shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div id="footer"></div>
+    <!-- Address Concerns -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-5">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold text-primary mb-8">We Address Your Concerns</h2>
+                    <p class="text-gray-600 mb-8">
+                        We understand the common concerns about cloud migration. Our expertise and proven methodologies address each challenge proactively.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center p-3 bg-gray-50 rounded">
+                            <span>Security</span>
+                            <div class="w-[35%] h-5 rounded-full bg-accent"></div>
+                        </div>
+                        <div class="flex justify-between items-center p-3 bg-gray-50 rounded">
+                            <span>Customization</span>
+                            <div class="w-[18%] h-5 rounded-full bg-primary"></div>
+                        </div>
+                        <div class="flex justify-between items-center p-3 bg-gray-50 rounded">
+                            <span>Reliability</span>
+                            <div class="w-[14%] h-5 rounded-full bg-secondary"></div>
+                        </div>
+                        <div class="flex justify-between items-center p-3 bg-gray-50 rounded">
+                            <span>Data Ownership</span>
+                            <div class="w-[12%] h-5 rounded-full bg-blue-600"></div>
+                        </div>
+                        <div class="flex justify-between items-center p-3 bg-gray-50 rounded">
+                            <span>No Substantial Concerns</span>
+                            <div class="w-[9%] h-5 rounded-full bg-blue-400"></div>
+                        </div>
+                    </div>
+                    <p class="mt-5 italic text-gray-600">
+                        *Based on industry research of cloud adoption concerns
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-primary mb-5">Our Solutions:</h3>
+                    <ul class="space-y-4">
+                        <li class="p-4 bg-gray-50 border-l-4 border-accent">
+                            <strong>Enterprise Security:</strong> Military-grade encryption, compliance frameworks, and 24/7 monitoring
+                        </li>
+                        <li class="p-4 bg-gray-50 border-l-4 border-primary">
+                            <strong>Flexible Customization:</strong> Preserve and enhance your business logic during upgrades
+                        </li>
+                        <li class="p-4 bg-gray-50 border-l-4 border-secondary">
+                            <strong>99.9% Uptime SLA:</strong> Enterprise-grade reliability with disaster recovery
+                        </li>
+                        <li class="p-4 bg-gray-50 border-l-4 border-blue-600">
+                            <strong>Clear Data Governance:</strong> You maintain complete ownership and control of your data
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <script src="js/script.js"></script>
+    <!-- Why Choose Us -->
+    <section class="py-20 bg-primary text-white">
+        <div class="container mx-auto px-5">
+            <h2 class="text-4xl font-bold text-center mb-16">Why Choose The Quantum Fox?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+                <div class="text-center p-8">
+                    <div class="text-4xl font-bold text-accent mb-4">01</div>
+                    <h3 class="text-xl font-bold mb-4">Proven Industry Experience</h3>
+                    <p>70+ successful ERP engagements across government, health, financial services, manufacturing, and education sectors. Deep understanding of industry-specific requirements and compliance needs.</p>
+                </div>
+                <div class="text-center p-8">
+                    <div class="text-4xl font-bold text-accent mb-4">02</div>
+                    <h3 class="text-xl font-bold mb-4">Client-Centric Approach</h3>
+                    <p>We focus on understanding your unique business needs and delivering tailored solutions that exceed expectations at every project milestone.</p>
+                </div>
+                <div class="text-center p-8">
+                    <div class="text-4xl font-bold text-accent mb-4">03</div>
+                    <h3 class="text-xl font-bold mb-4">Proven Track Record</h3>
+                    <p>100% on-time, on-budget delivery record. Our deep domain expertise ensures high-value, scalable solutions that future-proof your business.</p>
+                </div>
+                <div class="text-center p-8">
+                    <div class="text-4xl font-bold text-accent mb-4">04</div>
+                    <h3 class="text-xl font-bold mb-4">End-to-End Solutions</h3>
+                    <p>From strategic planning and deployment to post-go-live support and optimization, we provide comprehensive Oracle ERP Cloud consulting services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- tabs -->
-    <script>
-        const tabTitles = document.querySelectorAll('.tab-title');
-        const tabContents = document.querySelectorAll('.tab-content');
-        const tabTitleElement = document.getElementById('tab-title');
+    <!-- Services Preview -->
+    <section class="py-20" id="services">
+        <div class="container mx-auto px-5">
+            <h2 class="text-4xl font-bold text-primary text-center mb-5">Our Service Portfolio</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="bg-white p-10 rounded-xl shadow-lg text-center">
+                    <h3 class="text-2xl font-bold text-primary mb-5">Advisory Services</h3>
+                    <p class="mb-3"><strong>Cloud Roadmap Development:</strong> Comprehensive assessment and strategic planning for your cloud journey.</p>
+                    <p class="mb-3"><strong>Phase 0 Services:</strong> Complimentary pre-implementation roadmap with clear milestones and risk mitigation.</p>
+                    <p><strong>Delivery Advisory:</strong> Proactive guidance throughout implementation to ensure on-time, on-budget delivery.</p>
+                </div>
+                <div class="bg-white p-10 rounded-xl shadow-lg text-center">
+                    <h3 class="text-2xl font-bold text-primary mb-5">Implementation</h3>
+                    <p class="mb-3"><strong>Oracle ERP Cloud:</strong> Complete financial, procurement, and project management implementations.</p>
+                    <p class="mb-3"><strong>Integration Services:</strong> Seamless connectivity with existing systems and data migration.</p>
+                    <p><strong>Testing & Validation:</strong> Comprehensive quality assurance and user acceptance testing.</p>
+                </div>
+                <div class="bg-white p-10 rounded-xl shadow-lg text-center">
+                    <h3 class="text-2xl font-bold text-primary mb-5">Continuous Innovation</h3>
+                    <p class="mb-3"><strong>Post-Implementation Support:</strong> Ongoing optimization and feature enablement.</p>
+                    <p class="mb-3"><strong>Managed Services:</strong> Complete system administration and user support.</p>
+                    <p><strong>Performance Optimization:</strong> Regular health checks and improvement recommendations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        // Function to handle tab click events
-        const handleTabClick = (tab) => {
-            const selectedTab = tab.getAttribute('data-tab');
+    <!-- Final CTA -->
+    <section class="py-20 bg-primary text-white text-center" id="contact">
+        <div class="container mx-auto px-5">
+            <h2 class="text-4xl font-bold mb-5">Ready to Transform Your Business?</h2>
+            <p class="text-xl mb-10">Let's discuss how Oracle ERP Cloud can drive your organization's success. Schedule your complimentary consultation today.</p>
+            <a href="mailto:info@thequantumfox.com" class="bg-white text-accent px-8 py-4 rounded-lg text-lg font-medium inline-block mx-2 hover:bg-gray-100 transition-colors">Get Started Today</a>
+            <a href="tel:+61" class="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-medium inline-block mx-2 hover:bg-white hover:text-accent transition-colors">Call Us Now</a>
+            <div class="mt-10 opacity-90">
+                <p class="font-bold">The Quantum Fox</p>
+                <p>info@thequantumfox.com | www.thequantumfox.com</p>
+            </div>
+        </div>
+    </section>
 
-            // Hide/show tab content
-            tabContents.forEach(content => content.classList.remove('active'));
-            document.getElementById(selectedTab).classList.add('active');
-
-            // Update active styles for buttons
-            tabTitles.forEach(btn => {
-                if (btn === tab) {
-                    btn.classList.add('text-black', 'border-black'); // Active styles
-                    btn.classList.remove('text-gray-500', 'border-gray-500');
-                } else {
-                    btn.classList.remove('text-black', 'border-black');
-                    btn.classList.add('text-gray-500', 'border-gray-500'); // Inactive styles
-                }
-            });
-        };
-
-        // Attach click event to each tab
-        tabTitles.forEach(tab => {
-            tab.addEventListener('click', () => handleTabClick(tab));
-        });
-
-        // Optionally, trigger a click on the first tab to set the initial state
-        handleTabClick(tabTitles[0]);
-       
-    </script>
+    <footer class="bg-gray-900 text-white py-5 text-center">
+        <div class="container mx-auto px-5">
+            <p>&copy; 2025 The Quantum Fox. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>

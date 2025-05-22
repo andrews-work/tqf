@@ -1,42 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | The Quantum Fox - Oracle ERP Cloud Specialists</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+      tailwind.config = {
+          theme: {
+              extend: {
+                  colors: {
+                      primary: '#1e3c72',
+                      secondary: '#2a5298',
+                      accent: '#ff6b35',
+                      accentDark: '#e55a2b',
+                  }
+              }
+          }
+      }
+  </script>
 </head>
-    
-<body class="bg-black">
+<body class="text-gray-800 font-sans">
 
-    <div id="header"></div>
+<!-- Header -->
+<header class="bg-accent text-white py-5 sticky top-0 z-50">
+    <div class="container mx-auto px-5">
+        <nav class="flex justify-between items-center">
+            <div class="text-2xl font-bold">The Quantum Fox</div>
+            <ul class="flex space-x-8">
+                <li><a href="index.html" class="hover:text-primary transition-colors">Home</a></li>
+                <li><a href="services.html" class="hover:text-primary transition-colors">Services</a></li>
+                <li><a href="contact.html" id="contact" class="hover:text-primary transition-colors target:text-primary">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+  </header>
 
-    <main class="mx-auto">
+  <!-- Hero Section -->
+  <section class="bg-primary text-white py-20 text-center">
+    <div class="max-w-4xl mx-auto px-4">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6">Get In Touch</h1>
+      <p class="text-lg md:text-xl opacity-90">
+        Ready to transform your business with Oracle ERP Cloud? Let's discuss how we can help you achieve your digital transformation goals. Our expert consultants are here to guide you every step of the way.
+      </p>
+    </div>
+  </section>
 
-        <!-- section 1: email + image -->
-        <section class="w-full">
-            <div class="grid grid-cols-12 lg:grid-cols-12">
-                
-                <!-- Left Column -->
-                <div class="col-span-12 md:col-span-4 bg-gray-100 p-4 flex flex-col justify-center items-center h-64 md:h-full">
-                    <p class="text-xl md:text-2xl lg:text-3xl text-black text-center">sales@thequantumfox.com</p>                    
-                </div>                
+  <!-- Contact Section -->
+  <section class="bg-gray-100 py-20">
+    <div class="max-w-2xl mx-auto px-4 grid md:grid-cols-1 gap-12">
+      <!-- Contact Info -->
+      <div class="bg-white p-10 rounded-xl shadow-lg">
+        <!-- <h2 class="text-3xl text-blue-900 font-semibold mb-8 text-center">Contact Information</h2> -->
 
-                <!-- Right Column (Image) -->
-                <div class="col-span-12 md:col-span-8 bg-black">
-                    <img src="images/great.jpg" alt="do something great neon" class="w-full h-auto">
-                </div>
-
+        <div class="space-y-6">
+          <div class="flex items-start border-l-4 border-orange-500 bg-gray-100 p-4 rounded-lg">
+            <div class="text-2xl text-orange-500 mr-4">📧</div>
+            <div>
+              <h3 class="text-blue-900 font-semibold">Email Address</h3>
+              <p><a href="mailto:info@thequantumfox.com" class="text-orange-500 hover:underline">info@thequantumfox.com</a></p>
             </div>
-        </section>
+          </div>
 
-    </main>
+          <div class="flex items-start border-l-4 border-orange-500 bg-gray-100 p-4 rounded-lg">
+            <div class="text-2xl text-orange-500 mr-4">📞</div>
+            <div>
+              <h3 class="text-blue-900 font-semibold">Phone Number</h3>
+              <p><a href="tel:+61" class="text-orange-500 hover:underline">+61 (0) XXX XXX XXX</a></p>
+            </div>
+          </div>
 
-    <div id="footer"></div>
+          <div class="flex items-start border-l-4 border-orange-500 bg-gray-100 p-4 rounded-lg">
+            <div class="text-2xl text-orange-500 mr-4">📍</div>
+            <div>
+              <h3 class="text-blue-900 font-semibold">Location</h3>
+              <p>Sydney, New South Wales<br>Australia</p>
+            </div>
+          </div>
 
-    <script src="js/script.js"></script>
+          <div class="flex items-start border-l-4 border-orange-500 bg-gray-100 p-4 rounded-lg">
+            <div class="text-2xl text-orange-500 mr-4">🌐</div>
+            <div>
+              <h3 class="text-blue-900 font-semibold">Website</h3>
+              <p><a href="https://www.thequantumfox.com" class="text-orange-500 hover:underline" target="_blank">www.thequantumfox.com</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gray-50 mt-8 p-6 rounded-lg shadow-sm border border-gray-200">
+            <h3 class="text-blue-800 font-semibold mb-4 text-lg">Business Hours</h3>
+            <div class="space-y-3 text-sm">
+              <div class="flex justify-between border-b border-gray-100 pb-2">
+                <span class="font-medium text-gray-700">Monday - Friday</span>
+                <span class="text-gray-600">9:00 AM - 6:00 PM</span>
+              </div>
+              <div class="flex justify-between border-b border-gray-100 pb-2">
+                <span class="font-medium text-gray-700">Saturday</span>
+                <span class="text-gray-600">By Appointment</span>
+              </div>
+              <div class="flex justify-between border-b border-gray-100 pb-2">
+                <span class="font-medium text-gray-700">Sunday</span>
+                <span class="text-gray-600">Closed</span>
+              </div>
+              <div class="flex justify-between pt-1">
+                <span class="font-medium text-gray-700">Time Zone</span>
+                <span class="text-gray-600">AEST/AEDT</span>
+              </div>
+            </div>
+            <p class="mt-4 text-gray-500 text-xs italic bg-blue-50 p-2 rounded">
+              Emergency support available 24/7 for existing clients
+            </p>
+          </div>
+      </div>
+
+      <!-- Contact Form -->
+      <!-- <div class="bg-white p-10 rounded-xl shadow-lg">
+        <h2 class="text-2xl text-blue-900 font-semibold mb-8">Send Us a Message</h2>
+        <form action="#" method="POST" class="space-y-6">
+          <div>
+            <label for="name" class="block font-semibold mb-2">Full Name *</label>
+            <input type="text" id="name" name="name" required class="w-full border-2 border-gray-200 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-orange-300">
+          </div>
+          <div>
+            <label for="email" class="block font-semibold mb-2">Email Address *</label>
+            <input type="email" id="email" name="email" required class="w-full border-2 border-gray-200 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-orange-300">
+          </div>
+          <div>
+            <label for="phone" class="block font-semibold mb-2">Phone Number</label>
+            <input type="tel" id="phone" name="phone" class="w-full border-2 border-gray-200 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-orange-300">
+          </div>
+          <div>
+            <label for="company" class="block font-semibold mb-2">Company Name</label>
+            <input type="text" id="company" name="company" class="w-full border-2 border-gray-200 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-orange-300">
+          </div>
+          <div>
+            <label for="industry" class="block font-semibold mb-2">Industry Sector</label>
+            <select id="industry" name="industry" class="w-full border-2 border-gray-200 rounded-lg p-3">
+              <option value="">Select your industry</option>
+              <option value="government">Government</option>
+              <option value="health">Health</option>
+              <option value="financial">Financial Services</option>
+              <option value="manufacturing">Manufacturing</option>
+              <option value="education">Education</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div>
+            <label for="service" class="block font-semibold mb-2">Service Interest</label>
+            <select id="service" name="service" class="w-full border-2 border-gray-200 rounded-lg p-3">
+              <option value="">Select a service</option>
+              <option value="strategy">ERP Strategy & Planning</option>
+              <option value="implementation">Oracle ERP Cloud Implementation</option>
+              <option value="migration">System Upgrades & Migration</option>
+              <option value="customization">Customization & Integration</option>
+              <option value="training">Training & Support</option>
+              <option value="health-check">ERP Health Check</option>
+              <option value="advisory">Executive Advisory</option>
+              <option value="project-management">Program Management</option>
+            </select>
+          </div>
+          <div>
+            <label for="timeline" class="block font-semibold mb-2">Project Timeline</label>
+            <select id="timeline" name="timeline" class="w-full border-2 border-gray-200 rounded-lg p-3">
+              <option value="">Select timeline</option>
+              <option value="immediate">Immediate (0-3 months)</option>
+              <option value="short-term">Short-term (3-6 months)</option>
+              <option value="medium-term">Medium-term (6-12 months)</option>
+              <option value="long-term">Long-term (12+ months)</option>
+              <option value="planning">Planning phase</option>
+            </select>
+          </div>
+          <div>
+            <label for="message" class="block font-semibold mb-2">Message *</label>
+            <textarea id="message" name="message" required class="w-full h-32 border-2 border-gray-200 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-orange-300" placeholder="Please tell us about your project requirements, current challenges, or any specific questions you have about Oracle ERP Cloud..."></textarea>
+          </div>
+          <button type="submit" class="bg-orange-500 text-white font-bold py-3 px-6 rounded-lg w-full hover:bg-orange-600 transition">Send Message</button>
+        </form>
+        <p class="text-gray-500 text-sm mt-4">* Required fields. We typically respond within 24 hours during business days.</p>
+      </div> -->
+    </div>
+  </section>
+
+<!-- Quick Actions -->
+<!-- <section class="bg-white py-20">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl text-center font-bold text-blue-900 mb-12">Quick Ways to Connect</h2>
+      <div class="grid gap-10 md:grid-cols-3">
+        <div class="bg-gradient-to-r from-blue-900 to-blue-700 text-white p-8 rounded-xl text-center transform transition hover:-translate-y-1">
+          <div class="text-4xl mb-4">📅</div>
+          <h3 class="text-xl font-bold mb-3">Schedule a Consultation</h3>
+          <p>Book a free 30-minute consultation to discuss your Oracle ERP Cloud requirements and explore how we can help transform your business.</p>
+          <a href="mailto:info@thequantumfox.com?subject=Consultation Request" class="inline-block mt-6 bg-orange-500 text-white px-6 py-2 rounded hover:bg-orange-600">Book Now</a>
+        </div>
+        <div class="bg-gradient-to-r from-blue-900 to-blue-700 text-white p-8 rounded-xl text-center transform transition hover:-translate-y-1">
+          <div class="text-4xl mb-4">📋</div>
+          <h3 class="text-xl font-bold mb-3">Request a Proposal</h3>
+          <p>Get a detailed proposal for your Oracle ERP Cloud project including timeline, scope, and investment requirements.</p>
+          <a href="mailto:info@thequantumfox.com?subject=Proposal Request" class="inline-block mt-6 bg-orange-500 text-white px-6 py-2 rounded hover:bg-orange-600">Request Proposal</a>
+        </div>
+        <div class="bg-gradient-to-r from-blue-900 to-blue-700 text-white p-8 rounded-xl text-center transform transition hover:-translate-y-1">
+          <div class="text-4xl mb-4">🔍</div>
+          <h3 class="text-xl font-bold mb-3">ERP Health Check</h3>
+          <p>Get a complimentary assessment of your current ERP system and recommendations for optimization or migration.</p>
+          <a href="mailto:info@thequantumfox.com?subject=ERP Health Check" class="inline-block mt-6 bg-orange-500 text-white px-6 py-2 rounded hover:bg-orange-600">Get Assessment</a>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  
+
+    <!-- Map Section -->
+    <!-- <section class="bg-white py-20">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+          <h2 class="text-3xl md:text-4xl text-blue-900 font-bold mb-10">Our Location</h2>
+          <div class="bg-gray-100 h-96 rounded-xl flex items-center justify-center text-gray-600 text-lg">
+            <div>
+              <h3 class="text-blue-900 text-xl font-semibold mb-2">Sydney, New South Wales</h3>
+              <p>Serving clients across Australia and the Asia-Pacific region</p>
+              <p class="italic mt-2">Interactive map integration available</p>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+    <!-- FAQ Section -->
+    <section class="bg-gray-100 py-20">
+        <div class="max-w-6xl mx-auto px-4">
+          <h2 class="text-3xl md:text-4xl text-center text-blue-900 font-bold mb-12">Frequently Asked Questions</h2>
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow">
+              <div class="font-semibold text-blue-900 mb-2">How quickly can you respond to my inquiry?</div>
+              <div class="text-gray-600">We typically respond within 24 hours during business days. For urgent matters, please call us directly.</div>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow">
+              <div class="font-semibold text-blue-900 mb-2">Do you offer free consultations?</div>
+              <div class="text-gray-600">Yes, we offer complimentary 30-minute consultations to understand your needs and how Oracle ERP Cloud can help.</div>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow">
+              <div class="font-semibold text-blue-900 mb-2">What industries do you specialize in?</div>
+              <div class="text-gray-600">We specialize in government, health, financial services, manufacturing, and education, with 70+ successful engagements.</div>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow">
+              <div class="font-semibold text-blue-900 mb-2">Do you work with clients outside Sydney?</div>
+              <div class="text-gray-600">Yes! We serve clients across Australia and the Asia-Pacific, both remotely and on-site when required.</div>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow">
+              <div class="font-semibold text-blue-900 mb-2">What is the typical project timeline?</div>
+              <div class="text-gray-600">Typical Oracle ERP Cloud projects last 6–18 months depending on scope and organization size.</div>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow">
+              <div class="font-semibold text-blue-900 mb-2">Do you provide ongoing support?</div>
+              <div class="text-gray-600">Yes, we provide post-implementation support including training, optimization, and 24/7 emergency coverage.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white text-center py-10">
+        <div class="max-w-4xl mx-auto px-4 space-y-2">
+          <p>&copy; 2025 The Quantum Fox. All rights reserved.</p>
+          <p>Oracle ERP Cloud Specialists | Sydney, Australia | info@thequantumfox.com</p>
+        </div>
+      </footer>
+      
 </body>
 </html>
