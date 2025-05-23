@@ -19,34 +19,63 @@
             }
         }
     </script>
+
 </head>
 <body class="font-sans text-gray-800 leading-relaxed">
     
     <!-- Header -->
     <header class="bg-accent text-white py-5 sticky top-0 z-50">
-    <div class="container mx-auto px-5">
-        <nav class="flex justify-between items-center">
-            <div class="text-2xl font-bold">The Quantum Fox</div>
-            <ul class="flex space-x-8">
-                <li><a href="index.html" class="hover:text-primary transition-colors">Home</a></li>
-                <li><a href="services.html" class="hover:text-primary transition-colors">Services</a></li>
-                <li><a href="contact.html" id="contact" class="hover:text-primary transition-colors target:text-primary">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-  </header>
+        <div class="container mx-auto px-5">
+            <nav class="flex justify-between items-center">
+                <!-- Replace text with SVG logo -->
+                <a href="index.html" class="flex items-center h-24 -my-4">
+                    <img src="images/logo.svg" alt="The Quantum Fox" class="h-full w-auto object-contain">
+                </a>
+                
+                <!-- Desktop Navigation -->
+                <ul class="hidden md:flex space-x-8">
+                    <li><a href="index.html" class="hover:text-primary transition-colors">Home</a></li>
+                    <li><a href="services.html" class="hover:text-primary transition-colors">Services</a></li>
+                    <li><a href="contact.html" id="contact" class="hover:text-primary transition-colors target:text-primary">Contact</a></li>
+                </ul>
+                
+                <!-- Mobile Hamburger Button -->
+                <button class="md:hidden focus:outline-none" id="menu-toggle">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </nav>
+            
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden bg-accentDark w-full mt-4 py-4 px-5 rounded-lg" id="mobile-menu">
+                <ul class="space-y-4">
+                    <li><a href="index.html" class="block hover:text-primary transition-colors">Home</a></li>
+                    <li><a href="services.html" class="block hover:text-primary transition-colors">Services</a></li>
+                    <li><a href="contact.html" class="block hover:text-primary transition-colors">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
 
     <!-- Hero Section -->
-    <section class="bg-primary text-white py-20 text-center">
+    <section class="bg-primary text-white py-12 sm:py-20 text-center">
         <div class="container mx-auto px-5">
-            <h1 class="text-5xl font-bold mb-5">The Quantum Fox</h1>
-            <div class="text-2xl mb-4 opacity-90">Oracle ERP Cloud Specialists</div>
-            <div class="text-lg mb-10 opacity-80">Sydney, Australia</div>
-            <p class="text-xl mb-10 max-w-3xl mx-auto">
+            <h1 class="text-3xl sm:text-5xl font-bold mb-3 sm:mb-5">The Quantum Fox</h1>
+            <div class="text-xl sm:text-2xl mb-3 sm:mb-4 opacity-90">Oracle ERP Cloud Specialists</div>
+            <div class="text-base sm:text-lg mb-8 sm:mb-10 opacity-80">Sydney, Australia</div>
+            <p class="text-lg sm:text-xl mb-8 sm:mb-10 max-w-3xl mx-auto">
                 Specialized ERP Management Consulting for Cloud Solutions (SaaS, PaaS & IaaS). 70+ successful engagements across government, health, financial services, manufacturing & education sectors.
             </p>
-            <a href="contact.html" class="bg-accent text-white px-8 py-4 rounded-lg text-lg font-medium inline-block mx-2 hover:bg-accentDark hover:-translate-y-0.5 transition-all">Start Your Transformation</a>
-            <a href="services.html" class="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-medium inline-block mx-2 hover:bg-white hover:text-primary transition-all">Explore Our Services</a>
+            <div class="flex flex-col sm:flex-row justify-center gap-4 sm:gap-0">
+                <a href="contact.html" class="bg-accent text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-medium inline-block sm:mx-2 hover:bg-accentDark hover:-translate-y-0.5 transition-all">
+                    Start Your Transformation
+                </a>
+                <a href="services.html" class="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-medium inline-block sm:mx-2 hover:bg-white hover:text-primary transition-all">
+                    Explore Our Services
+                </a>
+            </div>
         </div>
     </section>
 
@@ -75,68 +104,68 @@
     </section>
 
     <!-- Who We Are & Problem Statement -->
-    <section class="py-20 bg-white">
+    <section class="py-12 sm:py-20 bg-white">
         <div class="container mx-auto px-5">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
                 <div>
-                    <h2 class="text-4xl font-bold text-primary mb-8">Who We Are</h2>
-                    <p class="text-xl mb-6">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-primary mb-6 sm:mb-8">Who We Are</h2>
+                    <p class="text-lg sm:text-xl mb-5 sm:mb-6">
                         TheQuantumFox is an ERP Management Consulting firm specialized in Cloud solutions (SaaS, PaaS and IaaS) and digital transformation based in Australia.
                     </p>
-                    <p class="text-gray-600 mb-8">
+                    <p class="text-gray-600 mb-6 sm:mb-8">
                         Our experienced consultants have delivered <strong>70 ERP engagements</strong> across government, health, financial services, councils, manufacturing & education industries.
                     </p>
                     
                     <!-- Industry Grid -->
-                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 mt-8">
-                        <div class="bg-gray-50 p-4 text-center rounded-lg border-l-4 border-accent">
-                            <div class="text-3xl mb-2">🏛️</div>
-                            <div class="font-bold text-primary">Government</div>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 sm:gap-4 mt-6 sm:mt-8">
+                        <div class="bg-gray-50 p-3 sm:p-4 text-center rounded-lg border-l-4 border-accent">
+                            <div class="text-2xl sm:text-3xl mb-1 sm:mb-2">🏛️</div>
+                            <div class="text-xs font-bold text-primary">Government</div>
                         </div>
-                        <div class="bg-gray-50 p-4 text-center rounded-lg border-l-4 border-primary">
-                            <div class="text-3xl mb-2">🏥</div>
-                            <div class="font-bold text-primary">Health</div>
+                        <div class="bg-gray-50 p-3 sm:p-4 text-center rounded-lg border-l-4 border-primary">
+                            <div class="text-2xl sm:text-3xl mb-1 sm:mb-2">🏥</div>
+                            <div class="text-xs font-bold text-primary">Health</div>
                         </div>
-                        <div class="bg-gray-50 p-4 text-center rounded-lg border-l-4 border-accent">
-                            <div class="text-3xl mb-2">🏦</div>
-                            <div class="font-bold text-primary">Financial</div>
+                        <div class="bg-gray-50 p-3 sm:p-4 text-center rounded-lg border-l-4 border-accent">
+                            <div class="text-2xl sm:text-3xl mb-1 sm:mb-2">🏦</div>
+                            <div class="text-xs font-bold text-primary">Financial</div>
                         </div>
-                        <div class="bg-gray-50 p-4 text-center rounded-lg border-l-4 border-primary">
-                            <div class="text-3xl mb-2">🏭</div>
-                            <div class="font-bold text-primary">Manufacturing</div>
+                        <div class="bg-gray-50 p-3 sm:p-4 text-center rounded-lg border-l-4 border-primary">
+                            <div class="text-2xl sm:text-3xl mb-1 sm:mb-2">🏭</div>
+                            <div class="text-xs font-bold text-primary">Industry</div>
                         </div>
-                        <div class="bg-gray-50 p-4 text-center rounded-lg border-l-4 border-accent">
-                            <div class="text-3xl mb-2">🎓</div>
-                            <div class="font-bold text-primary">Education</div>
+                        <div class="bg-gray-50 p-3 sm:p-4 text-center rounded-lg border-l-4 border-accent">
+                            <div class="text-2xl sm:text-3xl mb-1 sm:mb-2">🎓</div>
+                            <div class="text-xs font-bold text-primary">Education</div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="bg-gradient-to-br from-primary to-secondary p-10 rounded-xl text-white">
-                    <h3 class="text-3xl mb-6 text-accent">Is Your ERP Holding You Back?</h3>
-                    <p class="mb-5">
+                <div class="bg-gradient-to-br from-primary to-secondary p-6 sm:p-10 rounded-xl text-white">
+                    <h3 class="text-2xl sm:text-3xl mb-4 sm:mb-6 text-accent">Is Your ERP Holding You Back?</h3>
+                    <p class="mb-4 sm:mb-5">
                         When was the last time you upgraded your ERP system? If the answer is "not in recent memory," then you aren't alone.
                     </p>
-                    <p class="mb-6">
+                    <p class="mb-5 sm:mb-6">
                         About <strong>two-thirds of mid-sized businesses</strong> are running old versions of their enterprise resource planning (ERP) system - in some cases, it's software that's three or more versions old.
                     </p>
-                    <div class="bg-white bg-opacity-10 p-5 rounded-lg mb-5">
-                        <h4 class="mb-4 text-accent">Common Legacy Challenges:</h4>
-                        <ul class="space-y-2">
+                    <div class="bg-white bg-opacity-10 p-4 sm:p-5 rounded-lg mb-4 sm:mb-5">
+                        <h4 class="mb-3 sm:mb-4 text-accent">Common Legacy Challenges:</h4>
+                        <ul class="space-y-2 text-sm sm:text-base">
                             <li>✓ Decades of on-premise deployments</li>
                             <li>✓ Incremental releases never worth upgrading</li>
                             <li>✓ Fear of losing critical customizations</li>
                             <li>✓ Complex migration projects</li>
                         </ul>
                     </div>
-                    <p class="italic opacity-90">
+                    <p class="italic opacity-90 text-sm sm:text-base">
                         We help organizations break free from legacy constraints and embrace modern cloud ERP solutions.
                     </p>
                 </div>
             </div>
         </div>
     </section>
-
+    
     <!-- Solutions Section -->
     <section class="py-20">
         <div class="container mx-auto px-5">
@@ -335,15 +364,23 @@
     </section>
 
     <!-- Final CTA -->
-    <section class="py-20 bg-primary text-white text-center" id="contact">
+    <section class="py-12 sm:py-20 bg-primary text-white text-center" id="contact">
         <div class="container mx-auto px-5">
-            <h2 class="text-4xl font-bold mb-5">Ready to Transform Your Business?</h2>
-            <p class="text-xl mb-10">Let's discuss how Oracle ERP Cloud can drive your organization's success. Schedule your complimentary consultation today.</p>
-            <a href="mailto:info@thequantumfox.com" class="bg-white text-accent px-8 py-4 rounded-lg text-lg font-medium inline-block mx-2 hover:bg-gray-100 transition-colors">Get Started Today</a>
-            <a href="tel:+61" class="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-medium inline-block mx-2 hover:bg-white hover:text-accent transition-colors">Call Us Now</a>
-            <div class="mt-10 opacity-90">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-4 sm:mb-5">Ready to Transform Your Business?</h2>
+            <p class="text-lg sm:text-xl mb-8 sm:mb-10 max-w-3xl mx-auto">
+                Let's discuss how Oracle ERP Cloud can drive your organization's success. Schedule your complimentary consultation today.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4 sm:gap-0">
+                <a href="mailto:info@thequantumfox.com" class="bg-white text-accent px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-medium inline-block sm:mx-2 hover:bg-gray-100 transition-colors">
+                    Get Started Today
+                </a>
+                <a href="tel:+61" class="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-medium inline-block sm:mx-2 hover:bg-white hover:text-accent transition-colors">
+                    Call Us Now
+                </a>
+            </div>
+            <div class="mt-8 sm:mt-10 opacity-90 text-sm sm:text-base">
                 <p class="font-bold">The Quantum Fox</p>
-                <p>info@thequantumfox.com | www.thequantumfox.com</p>
+                <p>info@thequantumfox.com</p>
             </div>
         </div>
     </section>
@@ -353,5 +390,13 @@
             <p>&copy; 2025 The Quantum Fox. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        // Toggle mobile menu
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>

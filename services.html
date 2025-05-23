@@ -21,19 +21,40 @@
     </script>
 </head>
 <body class="font-sans text-gray-800 leading-relaxed">
+
     <!-- Header -->
     <header class="bg-accent text-white py-5 sticky top-0 z-50">
         <div class="container mx-auto px-5">
             <nav class="flex justify-between items-center">
-                <div class="text-2xl font-bold">The Quantum Fox</div>
-                <ul class="flex space-x-8">
+                <a href="index.html" class="flex items-center h-24 -my-4">
+                    <img src="images/logo.svg" alt="The Quantum Fox" class="h-full w-auto object-contain">
+                </a>
+                
+                <!-- Desktop Navigation -->
+                <ul class="hidden md:flex space-x-8">
                     <li><a href="index.html" class="hover:text-primary transition-colors">Home</a></li>
                     <li><a href="services.html" class="hover:text-primary transition-colors">Services</a></li>
                     <li><a href="contact.html" id="contact" class="hover:text-primary transition-colors target:text-primary">Contact</a></li>
                 </ul>
+                
+                <!-- Mobile Hamburger Button -->
+                <button class="md:hidden focus:outline-none" id="menu-toggle">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
             </nav>
+            
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden bg-accentDark w-full mt-4 py-4 px-5 rounded-lg" id="mobile-menu">
+                <ul class="space-y-4">
+                    <li><a href="index.html" class="block hover:text-primary transition-colors">Home</a></li>
+                    <li><a href="services.html" class="block hover:text-primary transition-colors">Services</a></li>
+                    <li><a href="contact.html" class="block hover:text-primary transition-colors">Contact</a></li>
+                </ul>
+            </div>
         </div>
-      </header>
+    </header>
 
     <!-- Hero Section -->
     <section class="bg-primary text-white py-20 text-center">
@@ -427,17 +448,23 @@
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="bg-gradient-to-br from-accent to-accentDark text-white py-20 text-center" id="contact">
-        <div class="container mx-auto px-5">
-            <h2 class="text-4xl font-bold mb-5">Ready to Transform Your Business?</h2>
-            <p class="text-xl mb-10 max-w-3xl mx-auto">
-                Contact The Quantum Fox today to learn more about our Oracle ERP Cloud consulting, executive advisory, and program management services.
-            </p>
-            <a href="mailto:info@thequantumfox.com" class="bg-white text-accent px-8 py-4 rounded-lg text-lg font-bold inline-block mx-2 hover:bg-gray-100 hover:-translate-y-1 transition-all">Start Your Transformation</a>
-            <a href="tel:+61" class="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-bold inline-block mx-2 hover:bg-white hover:text-accent transition-all">Schedule a Consultation</a>
+<!-- CTA Section -->
+<section class="bg-gradient-to-br from-accent to-accentDark text-white py-12 sm:py-20 text-center" id="contact">
+    <div class="container mx-auto px-5">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-4 sm:mb-5">Ready to Transform Your Business?</h2>
+        <p class="text-lg sm:text-xl mb-8 sm:mb-10 max-w-3xl mx-auto">
+            Contact The Quantum Fox today to learn more about our Oracle ERP Cloud consulting, executive advisory, and program management services.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4 sm:gap-0">
+            <a href="mailto:info@thequantumfox.com" class="bg-white text-accent px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-bold inline-block sm:mx-2 hover:bg-gray-100 hover:-translate-y-1 transition-all">
+                Start Your Transformation
+            </a>
+            <a href="tel:+61" class="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-bold inline-block sm:mx-2 hover:bg-white hover:text-accent transition-all">
+                Schedule a Consultation
+            </a>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-10 text-center">
@@ -446,5 +473,13 @@
             <p class="mt-2">Oracle ERP Cloud Specialists | Sydney, Australia</p>
         </div>
     </footer>
+
+    <script>
+        // Toggle mobile menu
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>

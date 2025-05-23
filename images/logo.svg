@@ -1,0 +1,47 @@
+<svg viewBox="0 0 450 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Define professional gradients -->
+  <defs>
+    <linearGradient id="primaryBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0078d4;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1e3c72;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d1421;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="accentOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff8c00;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e65100;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="techGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00acc1;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1976d2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e3c72;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="4" stdDeviation="4" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  
+  <!-- Compact horizontal logo -->
+  <g transform="translate(10, 20)">
+    <!-- Outer tech ring -->
+    <circle cx="30" cy="30" r="25" fill="none" stroke="url(#techGradient)" stroke-width="2" opacity="0.8"/>
+    
+    <!-- Q symbol -->
+    <circle cx="30" cy="30" r="15" fill="none" stroke="url(#primaryBlue)" stroke-width="3"/>
+    <path d="M 40 40 L 48 48" stroke="url(#primaryBlue)" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Fox ears -->
+    <path d="M 25 18 L 27 12 L 30 18 Z" fill="url(#accentOrange)" opacity="0.8"/>
+    <path d="M 30 18 L 33 12 L 35 18 Z" fill="url(#accentOrange)" opacity="0.8"/>
+    
+    <!-- Company name -->
+    <text x="70" y="25" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="url(#primaryBlue)">
+      TheQuantumFox
+    </text>
+    <text x="70" y="40" font-family="Arial, sans-serif" font-size="11" fill="#666">
+      Oracle Cloud Specialists | Enterprise Transformation
+    </text>
+  </g>
+</svg>
