@@ -24,52 +24,54 @@
 <body class="font-sans text-gray-800 leading-relaxed">
     
     <!-- Header -->
-    <header class="bg-accent text-white py-5 sticky top-0 z-50">
+    <header class="bg-white text-black py-5 sticky top-0 z-50 border-b border-accent">
         <div class="container mx-auto px-5">
             <nav class="flex justify-between items-center">
                 <!-- Replace text with SVG logo -->
-                <a href="index.html" class="flex items-center h-24 -my-4">
+                <a href="index.html" class="flex items-center h-40 -my-10">
                     <img src="images/logo.svg" alt="The Quantum Fox" class="h-full w-auto object-contain">
                 </a>
                 
                 <!-- Desktop Navigation -->
                 <ul class="hidden md:flex space-x-8">
                     <li><a href="index.html" class="hover:text-primary transition-colors">Home</a></li>
+                    <li><a href="index.html#about" class="hover:text-primary transition-colors">About</a></li>
                     <li><a href="services.html" class="hover:text-primary transition-colors">Services</a></li>
                     <li><a href="contact.html" id="contact" class="hover:text-primary transition-colors target:text-primary">Contact</a></li>
                 </ul>
                 
                 <!-- Mobile Hamburger Button -->
                 <button class="md:hidden focus:outline-none" id="menu-toggle">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                     </svg>
                 </button>
+                
             </nav>
             
             <!-- Mobile Menu -->
-            <div class="md:hidden hidden bg-accentDark w-full mt-4 py-4 px-5 rounded-lg" id="mobile-menu">
+            <div class="md:hidden hidden border-t border-accentDark w-full mt-4 py-4 px-5 " id="mobile-menu">
                 <ul class="space-y-4">
-                    <li><a href="index.html" class="block hover:text-primary transition-colors">Home</a></li>
-                    <li><a href="services.html" class="block hover:text-primary transition-colors">Services</a></li>
-                    <li><a href="contact.html" class="block hover:text-primary transition-colors">Contact</a></li>
+                    <li><a href="index.html" class="block hover:text-accent transition-colors">Home</a></li>
+                    <li><a href="index.html#about" class="block hover:text-accent transition-colors">About</a></li>
+                    <li><a href="services.html" class="block hover:text-accent transition-colors">Services</a></li>
+                    <li><a href="contact.html" class="block hover:text-accent transition-colors">Contact</a></li>
                 </ul>
             </div>
         </div>
     </header>
     
-
     <!-- Hero Section -->
     <section class="bg-primary text-white py-12 sm:py-20 text-center">
         <div class="container mx-auto px-5">
             <h1 class="text-3xl sm:text-5xl font-bold mb-3 sm:mb-5">The Quantum Fox</h1>
-            <div class="text-xl sm:text-2xl mb-3 sm:mb-4 opacity-90">Oracle ERP Cloud Specialists</div>
+            <div class="text-xl sm:text-2xl mb-3 sm:mb-4 opacity-90 text-accent">Oracle ERP Cloud Specialists</div>
             <div class="text-base sm:text-lg mb-8 sm:mb-10 opacity-80">Sydney, Australia</div>
             <p class="text-lg sm:text-xl mb-8 sm:mb-10 max-w-3xl mx-auto">
-                Specialized ERP Management Consulting for Cloud Solutions (SaaS, PaaS & IaaS). 70+ successful engagements across government, health, financial services, manufacturing & education sectors.
+                Specialised ERP Management Consulting for Cloud Solutions (SaaS, PaaS & IaaS). 70+ successful engagements across government, health, financial services, manufacturing & education sectors.
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-4 sm:gap-0">
-                <a href="contact.html" class="bg-accent text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-medium inline-block sm:mx-2 hover:bg-accentDark hover:-translate-y-0.5 transition-all">
+                <a href="contact.html" class="bg-accent text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-medium inline-block sm:mx-2 hover:bg-white hover:text-accent hover:-translate-y-0.5 transition-all">
                     Start Your Transformation
                 </a>
                 <a href="services.html" class="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-medium inline-block sm:mx-2 hover:bg-white hover:text-primary transition-all">
@@ -83,19 +85,19 @@
     <section class="bg-gray-50 py-16">
         <div class="container mx-auto px-5">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 text-center">
-                <div class="bg-white p-8 rounded-xl shadow-md">
+                <div class="bg-white p-8 rounded-xl shadow-md border-t border-accent">
                     <div class="text-5xl font-bold text-primary mb-3">70+</div>
                     <div class="text-lg text-gray-600">ERP Engagements Delivered</div>
                 </div>
-                <div class="bg-white p-8 rounded-xl shadow-md">
+                <div class="bg-white p-8 rounded-xl shadow-md border-t border-accent">
                     <div class="text-5xl font-bold text-primary mb-3">20+</div>
                     <div class="text-lg text-gray-600">Years of ERP Expertise</div>
                 </div>
-                <div class="bg-white p-8 rounded-xl shadow-md">
+                <div class="bg-white p-8 rounded-xl shadow-md border-t border-accent">
                     <div class="text-5xl font-bold text-primary mb-3">50%</div>
                     <div class="text-lg text-gray-600">Cost Savings vs On-Premise</div>
                 </div>
-                <div class="bg-white p-8 rounded-xl shadow-md">
+                <div class="bg-white p-8 rounded-xl shadow-md border-t border-accent">
                     <div class="text-5xl font-bold text-primary mb-3">5</div>
                     <div class="text-lg text-gray-600">Industry Sectors</div>
                 </div>
@@ -104,13 +106,13 @@
     </section>
 
     <!-- Who We Are & Problem Statement -->
-    <section class="py-12 sm:py-20 bg-white">
+    <section class="py-12 sm:py-20 bg-white" id="about">
         <div class="container mx-auto px-5">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
                 <div>
                     <h2 class="text-3xl sm:text-4xl font-bold text-primary mb-6 sm:mb-8">Who We Are</h2>
                     <p class="text-lg sm:text-xl mb-5 sm:mb-6">
-                        TheQuantumFox is an ERP Management Consulting firm specialized in Cloud solutions (SaaS, PaaS and IaaS) and digital transformation based in Australia.
+                        TheQuantumFox is an ERP Management Consulting firm specialising in Cloud solutions (SaaS, PaaS and IaaS) and digital transformation based in Australia.
                     </p>
                     <p class="text-gray-600 mb-6 sm:mb-8">
                         Our experienced consultants have delivered <strong>70 ERP engagements</strong> across government, health, financial services, councils, manufacturing & education industries.
@@ -154,12 +156,12 @@
                         <ul class="space-y-2 text-sm sm:text-base">
                             <li>✓ Decades of on-premise deployments</li>
                             <li>✓ Incremental releases never worth upgrading</li>
-                            <li>✓ Fear of losing critical customizations</li>
+                            <li>✓ Fear of losing critical customisations</li>
                             <li>✓ Complex migration projects</li>
                         </ul>
                     </div>
                     <p class="italic opacity-90 text-sm sm:text-base">
-                        We help organizations break free from legacy constraints and embrace modern cloud ERP solutions.
+                        We help organisations break free from legacy constraints and embrace modern cloud ERP solutions.
                     </p>
                 </div>
             </div>
@@ -167,10 +169,10 @@
     </section>
     
     <!-- Solutions Section -->
-    <section class="py-20">
+    <section class="py-20 bg-primary">
         <div class="container mx-auto px-5">
-            <h2 class="text-4xl font-bold text-primary text-center mb-5">Why Oracle ERP Cloud?</h2>
-            <p class="text-xl text-gray-600 text-center max-w-2xl mx-auto mb-16">
+            <h2 class="text-4xl font-bold text-accent text-center mb-5">Why Oracle ERP Cloud?</h2>
+            <p class="text-xl text-gray-100 text-center max-w-2xl mx-auto mb-16">
                 Experience the power of modern, secure, and cost-effective enterprise solutions designed for today's digital business environment.
             </p>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -187,17 +189,17 @@
                 <div class="bg-white p-8 rounded-xl shadow-lg hover:-translate-y-1 transition-transform">
                     <div class="text-5xl mb-5 text-accent">💰</div>
                     <h3 class="text-2xl font-bold text-primary mb-4">Cost Efficiency</h3>
-                    <p>Multi-tenant cloud architecture delivers over 50% cost savings compared to on-premise alternatives while optimizing your technology budget.</p>
+                    <p>Multi-tenant cloud architecture delivers over 50% cost savings compared to on-premise alternatives while optimising your technology budget.</p>
                 </div>
                 <div class="bg-white p-8 rounded-xl shadow-lg hover:-translate-y-1 transition-transform">
                     <div class="text-5xl mb-5 text-accent">🔄</div>
                     <h3 class="text-2xl font-bold text-primary mb-4">Automated Upgrades</h3>
-                    <p>Enjoy continuous innovation with automated upgrades and new features, eliminating manual patching and minimizing downtime.</p>
+                    <p>Enjoy continuous innovation with automated upgrades and new features, eliminating manual patching and minimising downtime.</p>
                 </div>
                 <div class="bg-white p-8 rounded-xl shadow-lg hover:-translate-y-1 transition-transform">
                     <div class="text-5xl mb-5 text-accent">⚙️</div>
-                    <h3 class="text-2xl font-bold text-primary mb-4">Seamless Customization</h3>
-                    <p>Your customizations are automatically preserved during upgrades, ensuring your business-specific enhancements remain intact.</p>
+                    <h3 class="text-2xl font-bold text-primary mb-4">Seamless Customisation</h3>
+                    <p>Your customisations are automatically preserved during upgrades, ensuring your business-specific enhancements remain intact.</p>
                 </div>
                 <div class="bg-white p-8 rounded-xl shadow-lg hover:-translate-y-1 transition-transform">
                     <div class="text-5xl mb-5 text-accent">📊</div>
@@ -245,7 +247,7 @@
                     </div>
                 </div>
                 <div>
-                    <img src="/api/placeholder/500/400" alt="ERP Benefits Visualization" class="w-full rounded-xl shadow-xl">
+                    <img src="/api/placeholder/500/400" alt="ERP Benefits Visualisation" class="w-full rounded-xl shadow-xl">
                 </div>
             </div>
         </div>
@@ -266,7 +268,7 @@
                             <div class="w-[35%] h-5 rounded-full bg-accent"></div>
                         </div>
                         <div class="flex justify-between items-center p-3 bg-gray-50 rounded">
-                            <span>Customization</span>
+                            <span>Customisation</span>
                             <div class="w-[18%] h-5 rounded-full bg-primary"></div>
                         </div>
                         <div class="flex justify-between items-center p-3 bg-gray-50 rounded">
@@ -293,7 +295,7 @@
                             <strong>Enterprise Security:</strong> Military-grade encryption, compliance frameworks, and 24/7 monitoring
                         </li>
                         <li class="p-4 bg-gray-50 border-l-4 border-primary">
-                            <strong>Flexible Customization:</strong> Preserve and enhance your business logic during upgrades
+                            <strong>Flexible Customisation:</strong> Preserve and enhance your business logic during upgrades
                         </li>
                         <li class="p-4 bg-gray-50 border-l-4 border-secondary">
                             <strong>99.9% Uptime SLA:</strong> Enterprise-grade reliability with disaster recovery
@@ -330,7 +332,7 @@
                 <div class="text-center p-8">
                     <div class="text-4xl font-bold text-accent mb-4">04</div>
                     <h3 class="text-xl font-bold mb-4">End-to-End Solutions</h3>
-                    <p>From strategic planning and deployment to post-go-live support and optimization, we provide comprehensive Oracle ERP Cloud consulting services.</p>
+                    <p>From strategic planning and deployment to post-go-live support and optimisation, we provide comprehensive Oracle ERP Cloud consulting services.</p>
                 </div>
             </div>
         </div>
@@ -339,25 +341,25 @@
     <!-- Services Preview -->
     <section class="py-20" id="services">
         <div class="container mx-auto px-5">
-            <h2 class="text-4xl font-bold text-primary text-center mb-5">Our Service Portfolio</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-                <div class="bg-white p-10 rounded-xl shadow-lg text-center">
+            <h2 class="text-4xl font-bold text-primary text-center mb-6">Service Portfolio</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mt-6">
+                <div class="bg-white p-10 rounded-xl shadow-lg text-center border-t border-accent">
                     <h3 class="text-2xl font-bold text-primary mb-5">Advisory Services</h3>
                     <p class="mb-3"><strong>Cloud Roadmap Development:</strong> Comprehensive assessment and strategic planning for your cloud journey.</p>
                     <p class="mb-3"><strong>Phase 0 Services:</strong> Complimentary pre-implementation roadmap with clear milestones and risk mitigation.</p>
                     <p><strong>Delivery Advisory:</strong> Proactive guidance throughout implementation to ensure on-time, on-budget delivery.</p>
                 </div>
-                <div class="bg-white p-10 rounded-xl shadow-lg text-center">
+                <div class="bg-white p-10 rounded-xl shadow-lg text-center border-t border-accent">
                     <h3 class="text-2xl font-bold text-primary mb-5">Implementation</h3>
                     <p class="mb-3"><strong>Oracle ERP Cloud:</strong> Complete financial, procurement, and project management implementations.</p>
                     <p class="mb-3"><strong>Integration Services:</strong> Seamless connectivity with existing systems and data migration.</p>
                     <p><strong>Testing & Validation:</strong> Comprehensive quality assurance and user acceptance testing.</p>
                 </div>
-                <div class="bg-white p-10 rounded-xl shadow-lg text-center">
+                <div class="bg-white p-10 rounded-xl shadow-lg text-center border-t border-accent">
                     <h3 class="text-2xl font-bold text-primary mb-5">Continuous Innovation</h3>
-                    <p class="mb-3"><strong>Post-Implementation Support:</strong> Ongoing optimization and feature enablement.</p>
+                    <p class="mb-3"><strong>Post-Implementation Support:</strong> Ongoing optimisation and feature enablement.</p>
                     <p class="mb-3"><strong>Managed Services:</strong> Complete system administration and user support.</p>
-                    <p><strong>Performance Optimization:</strong> Regular health checks and improvement recommendations.</p>
+                    <p><strong>Performance Optimisation:</strong> Regular health checks and improvement recommendations.</p>
                 </div>
             </div>
         </div>
@@ -368,10 +370,10 @@
         <div class="container mx-auto px-5">
             <h2 class="text-3xl sm:text-4xl font-bold mb-4 sm:mb-5">Ready to Transform Your Business?</h2>
             <p class="text-lg sm:text-xl mb-8 sm:mb-10 max-w-3xl mx-auto">
-                Let's discuss how Oracle ERP Cloud can drive your organization's success. Schedule your complimentary consultation today.
+                Let's discuss how Oracle ERP Cloud can drive your organisation's success. Schedule your complimentary consultation today.
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-4 sm:gap-0">
-                <a href="mailto:info@thequantumfox.com" class="bg-white text-accent px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-medium inline-block sm:mx-2 hover:bg-gray-100 transition-colors">
+                <a href="mailto:info@thequantumfox.com" class="bg-white text-accent px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-medium inline-block sm:mx-2 hover:bg-accent hover:text-white transition-colors">
                     Get Started Today
                 </a>
                 <a href="tel:+61" class="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-medium inline-block sm:mx-2 hover:bg-white hover:text-accent transition-colors">
@@ -387,7 +389,7 @@
 
     <footer class="bg-gray-900 text-white py-5 text-center">
         <div class="container mx-auto px-5">
-            <p>&copy; 2025 The Quantum Fox. All rights reserved.</p>
+            <p>&copy; 2025 The Quantum Fox Pty Ltd. All rights reserved.</p>
         </div>
     </footer>
 

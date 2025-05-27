@@ -24,34 +24,38 @@
 <body class="text-gray-800 font-sans">
 
     <!-- Header -->
-    <header class="bg-accent text-white py-5 sticky top-0 z-50">
+    <header class="bg-white text-black py-5 sticky top-0 z-50 border-b border-accent">
         <div class="container mx-auto px-5">
             <nav class="flex justify-between items-center">
-                <a href="index.html" class="flex items-center h-24 -my-4">
+                <!-- Replace text with SVG logo -->
+                <a href="index.html" class="flex items-center h-40 -my-10">
                     <img src="images/logo.svg" alt="The Quantum Fox" class="h-full w-auto object-contain">
                 </a>
                 
                 <!-- Desktop Navigation -->
                 <ul class="hidden md:flex space-x-8">
                     <li><a href="index.html" class="hover:text-primary transition-colors">Home</a></li>
+                    <li><a href="index.html#about" class="hover:text-primary transition-colors">About</a></li>
                     <li><a href="services.html" class="hover:text-primary transition-colors">Services</a></li>
                     <li><a href="contact.html" id="contact" class="hover:text-primary transition-colors target:text-primary">Contact</a></li>
                 </ul>
                 
                 <!-- Mobile Hamburger Button -->
                 <button class="md:hidden focus:outline-none" id="menu-toggle">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                     </svg>
                 </button>
+                
             </nav>
             
             <!-- Mobile Menu -->
-            <div class="md:hidden hidden bg-accentDark w-full mt-4 py-4 px-5 rounded-lg" id="mobile-menu">
+            <div class="md:hidden hidden border-t border-accentDark w-full mt-4 py-4 px-5 " id="mobile-menu">
                 <ul class="space-y-4">
-                    <li><a href="index.html" class="block hover:text-primary transition-colors">Home</a></li>
-                    <li><a href="services.html" class="block hover:text-primary transition-colors">Services</a></li>
-                    <li><a href="contact.html" class="block hover:text-primary transition-colors">Contact</a></li>
+                    <li><a href="index.html" class="block hover:text-accent transition-colors">Home</a></li>
+                    <li><a href="index.html#about" class="block hover:text-accent transition-colors">About</a></li>
+                    <li><a href="services.html" class="block hover:text-accent transition-colors">Services</a></li>
+                    <li><a href="contact.html" class="block hover:text-accent transition-colors">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -159,8 +163,8 @@
                     <div class="text-gray-600">Yes, we offer complimentary 30-minute consultations to understand your needs and how Oracle ERP Cloud can help.</div>
                 </div>
                 <div class="bg-white p-6 rounded-lg shadow">
-                    <div class="font-semibold text-blue-900 mb-2">What industries do you specialize in?</div>
-                    <div class="text-gray-600">We specialize in government, health, financial services, manufacturing, and education, with 70+ successful engagements.</div>
+                    <div class="font-semibold text-blue-900 mb-2">What industries do you specialise in?</div>
+                    <div class="text-gray-600">We specialise in government, health, financial services, manufacturing, and education, with 70+ successful engagements.</div>
                 </div>
                 <div class="bg-white p-6 rounded-lg shadow">
                     <div class="font-semibold text-blue-900 mb-2">Do you work with clients outside Sydney?</div>
@@ -168,11 +172,11 @@
                 </div>
                 <div class="bg-white p-6 rounded-lg shadow">
                     <div class="font-semibold text-blue-900 mb-2">What is the typical project timeline?</div>
-                    <div class="text-gray-600">Typical Oracle ERP Cloud projects last 6–18 months depending on scope and organization size.</div>
+                    <div class="text-gray-600">Typical Oracle ERP Cloud projects last 6–18 months depending on scope and organisation size.</div>
                 </div>
                 <div class="bg-white p-6 rounded-lg shadow">
                     <div class="font-semibold text-blue-900 mb-2">Do you provide ongoing support?</div>
-                    <div class="text-gray-600">Yes, we provide post-implementation support including training, optimization, and 24/7 emergency coverage.</div>
+                    <div class="text-gray-600">Yes, we provide post-implementation support including training, optimisation, and 24/7 emergency coverage.</div>
                 </div>
             </div>
         </div>

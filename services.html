@@ -23,34 +23,38 @@
 <body class="font-sans text-gray-800 leading-relaxed">
 
     <!-- Header -->
-    <header class="bg-accent text-white py-5 sticky top-0 z-50">
+    <header class="bg-white text-black py-5 sticky top-0 z-50 border-b border-accent">
         <div class="container mx-auto px-5">
             <nav class="flex justify-between items-center">
-                <a href="index.html" class="flex items-center h-24 -my-4">
+                <!-- Replace text with SVG logo -->
+                <a href="index.html" class="flex items-center h-40 -my-10">
                     <img src="images/logo.svg" alt="The Quantum Fox" class="h-full w-auto object-contain">
                 </a>
                 
                 <!-- Desktop Navigation -->
                 <ul class="hidden md:flex space-x-8">
                     <li><a href="index.html" class="hover:text-primary transition-colors">Home</a></li>
+                    <li><a href="index.html#about" class="hover:text-primary transition-colors">About</a></li>
                     <li><a href="services.html" class="hover:text-primary transition-colors">Services</a></li>
                     <li><a href="contact.html" id="contact" class="hover:text-primary transition-colors target:text-primary">Contact</a></li>
                 </ul>
                 
                 <!-- Mobile Hamburger Button -->
                 <button class="md:hidden focus:outline-none" id="menu-toggle">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                     </svg>
                 </button>
+                
             </nav>
             
             <!-- Mobile Menu -->
-            <div class="md:hidden hidden bg-accentDark w-full mt-4 py-4 px-5 rounded-lg" id="mobile-menu">
+            <div class="md:hidden hidden border-t border-accentDark w-full mt-4 py-4 px-5 " id="mobile-menu">
                 <ul class="space-y-4">
-                    <li><a href="index.html" class="block hover:text-primary transition-colors">Home</a></li>
-                    <li><a href="services.html" class="block hover:text-primary transition-colors">Services</a></li>
-                    <li><a href="contact.html" class="block hover:text-primary transition-colors">Contact</a></li>
+                    <li><a href="index.html" class="block hover:text-accent transition-colors">Home</a></li>
+                    <li><a href="index.html#about" class="block hover:text-accent transition-colors">About</a></li>
+                    <li><a href="services.html" class="block hover:text-accent transition-colors">Services</a></li>
+                    <li><a href="contact.html" class="block hover:text-accent transition-colors">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -62,7 +66,7 @@
             <h1 class="text-4xl md:text-5xl font-bold mb-5">Oracle ERP Cloud Consulting Services</h1>
             <p class="text-xl max-w-3xl mx-auto opacity-90">
                 Transforming Australian businesses with comprehensive Oracle ERP Cloud solutions. 
-                From strategy and implementation to ongoing optimization, we guide you through every step of your digital transformation journey.
+                From strategy and implementation to ongoing optimisation, we guide you through every step of your digital transformation journey.
             </p>
         </div>
     </section>
@@ -113,7 +117,7 @@
                     <div class="text-5xl mb-5 text-accent">📊</div>
                     <h3 class="text-2xl font-bold text-primary mb-4">ERP Strategy & Planning</h3>
                     <p class="text-gray-600 mb-6">
-                        We work closely with your business to develop a clear Oracle ERP Cloud implementation strategy that aligns with your organizational goals.
+                        We work closely with your business to develop a clear Oracle ERP Cloud implementation strategy that aligns with your organisational goals.
                     </p>
                     <ul class="space-y-3">
                         <li class="flex items-start">
@@ -173,7 +177,7 @@
                     <div class="text-5xl mb-5 text-accent">🔄</div>
                     <h3 class="text-2xl font-bold text-primary mb-4">System Upgrades & Migration</h3>
                     <p class="text-gray-600 mb-6">
-                        Specializing in smooth, risk-free migrations from on-premise ERP or legacy systems to Oracle ERP Cloud.
+                        Specialising in smooth, risk-free migrations from on-premise ERP or legacy systems to Oracle ERP Cloud.
                     </p>
                     <ul class="space-y-3">
                         <li class="flex items-start">
@@ -201,14 +205,14 @@
 
                 <div class="bg-white p-10 rounded-xl shadow-lg hover:-translate-y-1 transition-transform border-t-4 border-accent">
                     <div class="text-5xl mb-5 text-accent">🔧</div>
-                    <h3 class="text-2xl font-bold text-primary mb-4">Customization & Integration</h3>
+                    <h3 class="text-2xl font-bold text-primary mb-4">Customisation & Integration</h3>
                     <p class="text-gray-600 mb-6">
-                        Tailored customization and integration services to ensure Oracle ERP Cloud seamlessly integrates with your business processes.
+                        Tailored customisation and integration services to ensure Oracle ERP Cloud seamlessly integrates with your business processes.
                     </p>
                     <ul class="space-y-3">
                         <li class="flex items-start">
                             <span class="text-accent mr-2">✓</span>
-                            <span>Business-specific customizations</span>
+                            <span>Business-specific customisations</span>
                         </li>
                         <li class="flex items-start">
                             <span class="text-accent mr-2">✓</span>
@@ -220,7 +224,7 @@
                         </li>
                         <li class="flex items-start">
                             <span class="text-accent mr-2">✓</span>
-                            <span>Workflow optimization</span>
+                            <span>Workflow optimisation</span>
                         </li>
                         <li class="flex items-start">
                             <span class="text-accent mr-2">✓</span>
@@ -233,7 +237,7 @@
                     <div class="text-5xl mb-5 text-accent">🎓</div>
                     <h3 class="text-2xl font-bold text-primary mb-4">Training & Support</h3>
                     <p class="text-gray-600 mb-6">
-                        Comprehensive training programs and ongoing support to empower your team and ensure system optimization.
+                        Comprehensive training programs and ongoing support to empower your team and ensure system optimisation.
                     </p>
                     <ul class="space-y-3">
                         <li class="flex items-start">
@@ -261,9 +265,9 @@
 
                 <div class="bg-white p-10 rounded-xl shadow-lg hover:-translate-y-1 transition-transform border-t-4 border-accent">
                     <div class="text-5xl mb-5 text-accent">🔍</div>
-                    <h3 class="text-2xl font-bold text-primary mb-4">ERP Health Check & Optimization</h3>
+                    <h3 class="text-2xl font-bold text-primary mb-4">ERP Health Check & Optimisation</h3>
                     <p class="text-gray-600 mb-6">
-                        Comprehensive evaluation of your current system performance with optimization recommendations for peak efficiency.
+                        Comprehensive evaluation of your current system performance with optimisation recommendations for peak efficiency.
                     </p>
                     <ul class="space-y-3">
                         <li class="flex items-start">
@@ -284,7 +288,7 @@
                         </li>
                         <li class="flex items-start">
                             <span class="text-accent mr-2">✓</span>
-                            <span>Optimization roadmap development</span>
+                            <span>Optimisation roadmap development</span>
                         </li>
                     </ul>
                 </div>
@@ -310,16 +314,16 @@
                 </div>
                 
                 <div class="bg-white p-10 rounded-xl shadow-lg text-center">
-                    <h3 class="text-xl font-bold text-primary mb-5">Optimization & Customization</h3>
+                    <h3 class="text-xl font-bold text-primary mb-5">Optimisation & Customisation</h3>
                     <p class="text-gray-600 mb-6">Tailoring Oracle ERP Cloud features to fit your specific operational requirements and business processes.</p>
                     <div class="bg-gray-50 p-4 rounded-lg">
-                        <strong class="text-accent">Key Focus:</strong> Process optimization and efficiency gains
+                        <strong class="text-accent">Key Focus:</strong> Process optimisation and efficiency gains
                     </div>
                 </div>
                 
                 <div class="bg-white p-10 rounded-xl shadow-lg text-center">
                     <h3 class="text-xl font-bold text-primary mb-5">Migration Services</h3>
-                    <p class="text-gray-600 mb-6">Secure and efficient migration from legacy systems to Oracle ERP Cloud, minimizing downtime and ensuring data integrity.</p>
+                    <p class="text-gray-600 mb-6">Secure and efficient migration from legacy systems to Oracle ERP Cloud, minimising downtime and ensuring data integrity.</p>
                     <div class="bg-gray-50 p-4 rounded-lg">
                         <strong class="text-accent">Key Focus:</strong> Risk mitigation and business continuity
                     </div>
@@ -349,7 +353,7 @@
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
                         <div class="bg-white bg-opacity-10 p-6 rounded-lg border-l-4 border-accent">
                             <h4 class="text-lg font-bold text-accent mb-3">Digital Transformation Strategy</h4>
-                            <p>Develop a comprehensive roadmap for implementing Oracle ERP Cloud that aligns with your organization's strategic objectives and growth plans.</p>
+                            <p>Develop a comprehensive roadmap for implementing Oracle ERP Cloud that aligns with your organisation's strategic objectives and growth plans.</p>
                         </div>
                         
                         <div class="bg-white bg-opacity-10 p-6 rounded-lg border-l-4 border-accent">
@@ -359,12 +363,12 @@
                         
                         <div class="bg-white bg-opacity-10 p-6 rounded-lg border-l-4 border-accent">
                             <h4 class="text-lg font-bold text-accent mb-3">Risk Management</h4>
-                            <p>Proactively identify and mitigate risks associated with ERP implementations, upgrades, and organizational change management.</p>
+                            <p>Proactively identify and mitigate risks associated with ERP implementations, upgrades, and organisational change management.</p>
                         </div>
                         
                         <div class="bg-white bg-opacity-10 p-6 rounded-lg border-l-4 border-accent">
-                            <h4 class="text-lg font-bold text-accent mb-3">ROI Optimization</h4>
-                            <p>Maximize return on investment through strategic planning, resource optimization, and performance measurement frameworks.</p>
+                            <h4 class="text-lg font-bold text-accent mb-3">ROI Optimisation</h4>
+                            <p>Maximize return on investment through strategic planning, resource optimisation, and performance measurement frameworks.</p>
                         </div>
                     </div>
                 </div>
@@ -400,7 +404,7 @@
                     
                     <div class="mb-6 p-6 bg-white rounded-xl border-l-4 border-accent shadow-md">
                         <h4 class="text-xl font-bold text-primary mb-3">Agile & Waterfall Methodologies</h4>
-                        <p class="text-gray-600">Flexibility in project execution, leveraging both traditional and agile methodologies based on project complexity and organizational needs.</p>
+                        <p class="text-gray-600">Flexibility in project execution, leveraging both traditional and agile methodologies based on project complexity and organisational needs.</p>
                     </div>
                     
                     <div class="p-6 bg-white rounded-xl border-l-4 border-primary shadow-md">
@@ -448,23 +452,23 @@
         </div>
     </section>
 
-<!-- CTA Section -->
-<section class="bg-gradient-to-br from-accent to-accentDark text-white py-12 sm:py-20 text-center" id="contact">
-    <div class="container mx-auto px-5">
-        <h2 class="text-3xl sm:text-4xl font-bold mb-4 sm:mb-5">Ready to Transform Your Business?</h2>
-        <p class="text-lg sm:text-xl mb-8 sm:mb-10 max-w-3xl mx-auto">
-            Contact The Quantum Fox today to learn more about our Oracle ERP Cloud consulting, executive advisory, and program management services.
-        </p>
-        <div class="flex flex-col sm:flex-row justify-center gap-4 sm:gap-0">
-            <a href="mailto:info@thequantumfox.com" class="bg-white text-accent px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-bold inline-block sm:mx-2 hover:bg-gray-100 hover:-translate-y-1 transition-all">
-                Start Your Transformation
-            </a>
-            <a href="tel:+61" class="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-bold inline-block sm:mx-2 hover:bg-white hover:text-accent transition-all">
-                Schedule a Consultation
-            </a>
+    <!-- CTA Section -->
+    <section class="bg-gradient-to-br from-accent to-accentDark text-white py-12 sm:py-20 text-center" id="contact">
+        <div class="container mx-auto px-5">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-4 sm:mb-5">Ready to Transform Your Business?</h2>
+            <p class="text-lg sm:text-xl mb-8 sm:mb-10 max-w-3xl mx-auto">
+                Contact The Quantum Fox today to learn more about our Oracle ERP Cloud consulting, executive advisory, and program management services.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4 sm:gap-0">
+                <a href="mailto:info@thequantumfox.com" class="bg-white text-accent px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-bold inline-block sm:mx-2 hover:bg-gray-100 hover:-translate-y-1 transition-all">
+                    Start Your Transformation
+                </a>
+                <a href="tel:+61" class="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-bold inline-block sm:mx-2 hover:bg-white hover:text-accent transition-all">
+                    Schedule a Consultation
+                </a>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-10 text-center">
